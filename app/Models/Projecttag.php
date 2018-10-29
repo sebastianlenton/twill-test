@@ -11,7 +11,7 @@ use A17\Twill\Models\Behaviors\HasPosition;
 use A17\Twill\Models\Behaviors\Sortable;
 use A17\Twill\Models\Model;
 
-class Project extends Model implements Sortable
+class Projecttag extends Model implements Sortable
 {
     use HasBlocks, HasSlug, HasMedias, HasFiles, HasRevisions, HasPosition;
 
@@ -20,9 +20,6 @@ class Project extends Model implements Sortable
         'title',
         'description',
         'position',
-        'main-color',
-        'additionalRemark',
-        //'quote',
         // 'public',
         // 'featured',
         // 'publish_start_date',
@@ -36,7 +33,7 @@ class Project extends Model implements Sortable
     //     'active',
     // ];
     
-    //uncomment and modify this as needed if you use the HasSlug trait
+    // uncomment and modify this as needed if you use the HasSlug trait
     public $slugAttributes = [
         'title',
     ];
@@ -67,9 +64,4 @@ class Project extends Model implements Sortable
             ],
         ],
     ];
-
-    public function accordionItems()
-    {
-        return $this->hasMany('App\AccordionItem');
-    }
 }

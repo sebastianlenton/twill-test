@@ -18,4 +18,28 @@ class ProjectRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    // implement the afterSave method
+    public function afterSave($object, $fields) {
+        // for exemple, to sync a many to many relationship
+        //$this->updateMultiSelect($object, $fields, 'relationName');
+        
+        // which will simply run the following for you
+        //$object->relationName()->sync($fields['relationName'] ?? []);
+        
+        // or, to save a oneToMany relationship
+        //$this->updateOneToMany($object, $fields, 'relationName', 'formFieldName', 'relationAttribute')
+        
+        // or, to save a belongToMany relationship used with the browser field
+        //$this->updateBrowser($object, $fields, 'relationName');
+        
+        // or, to save a hasMany relationship used with the repeater field
+        $this->updateRepeater($object, $fields, 'accordionItems');
+        
+        // or, to save a belongToMany relationship used with the repeater field
+        //$this->updateRepeaterMany($object, $fields, 'relationName', false);
+        
+        parent::afterSave($object, $fields);
+    }
+
 }
