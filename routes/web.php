@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('site.homepage');
 });
+
+Route::get('/projects', 'ProjectListingController@index');
+
+Route::get('/projects/{projectSlug}', 'ProjectListingController@show');

@@ -8,12 +8,18 @@ use A17\Twill\Models\Model;
 class AccordionItem extends Model 
 {
     
+    //Added custom table name for AccordionItem model, because of how Laravel expect it by default
+    public $table = "accordion_item";
 
     protected $fillable = [
         'published',
-        'title',
+        //Renamed title field for header in AccordionItem model to align with repeater form field
+        'header',
+        //'title',
         'description',
-        'content'
+        'content',
+        //Added project_id in AccordionItem fillable
+        'project_id',
         // 'position',
         // 'public',
         // 'featured',

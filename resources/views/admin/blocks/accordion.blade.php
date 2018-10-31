@@ -1,4 +1,4 @@
-@formField('repeater', ['type' => 'accordion_item'])
+@formField('repeater', ['type' => 'accordion_items'])
 
 {{--
 @formField('input', [

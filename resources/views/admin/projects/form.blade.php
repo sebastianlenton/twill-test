@@ -9,10 +9,13 @@
         'required' => true,
     ])
 
-    @formField('repeater', [
+    {{-- Updated reference to repeater type in form --}}
+    @formField('repeater', ['type' => 'accordion_items'])
+
+    {{--@formField('repeater', [
       'name' => 'myRepeater',
       'type' => 'accordion_item']
-    )
+    )--}}
 
     @formField('color', [
       'name' => 'main-color',
@@ -29,11 +32,28 @@
 
 @section('fieldsets')
 
-  @formField('input', [
+    <a17-fieldset title="Media" id="media">
+
+        @formField('medias', [
+            'name' => 'cover',
+            'label' => 'Cover image',
+            'note' => 'Minimum image width 1300px',
+            'max' => 2
+        ])
+
+        @formField('medias', [
+            'name' => 'testImages',
+            'label' => 'Test images',
+            'note' => 'These are test images',
+        ])
+
+    </a17-fieldset>
+
+    @formField('input', [
       'name' => 'additionalRemark',
       'label' => 'Additional Remark',
       'maxlength' => 100
-  ])
+    ])
 
   {{-- can't get this to work...
 

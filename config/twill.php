@@ -30,7 +30,7 @@ return [
             ]
         ],
         'repeaters' => [
-            'accordion_item' => [
+            'accordion_items' => [
                 'title' => 'Accordion',
                 'trigger' => 'Add accordion',
                 'component' => 'a17-block-accordion_item',
@@ -40,5 +40,8 @@ return [
         'browser_route_prefixes' => [
             //'projecttags' => 'content',
         ],
+    ],
+    'enabled' => [
+        'settings' => true
     ]
 ];
