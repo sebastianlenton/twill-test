@@ -6,10 +6,12 @@
 
 @section('content')
 
-    <h1>Home</h1>
+    <h1>{{ $item[0]->title }}</h1>
+
+    {{-- $item->getData() --}}
 
     <p>
-        This is a placeholder homepage.
+        {{ $item[0]->description }}
     </p>
 
 @endsection

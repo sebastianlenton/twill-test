@@ -17,6 +17,7 @@ class ProjectListingController extends Controller
     }
 
 
+    //this is for the project listing
     public function index() {
 
         $projects = Project::latest()->get();
@@ -27,6 +28,7 @@ class ProjectListingController extends Controller
     }
 
 
+    //this is for an individual project
     public function show( $projectSlug ) {
 
         $project = $this->getProjectBySlug( $projectSlug );

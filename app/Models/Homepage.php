@@ -64,4 +64,5 @@ class Homepage extends Model implements Sortable
             ],
         ],
     ];
+    
 }

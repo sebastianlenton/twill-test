@@ -48,6 +48,18 @@ class Project extends Model implements Sortable
 
     // uncomment and modify this as needed if you use the HasMedias trait
     public $mediasParams = [
+        'top' => [
+            'default' => [
+                [
+                    'name' => 'landscape',
+                    'ratio' => 16 / 9,
+                ],
+                [
+                    'name' => 'portrait',
+                    'ratio' => 3 / 4,
+                ],
+            ]
+        ],
         'cover' => [
             'default' => [
                 [
@@ -88,6 +100,31 @@ class Project extends Model implements Sortable
         // Fixed hasMany call with correct reference to AccordionItem model
         return $this->hasMany(AccordionItem::class);
 
+    }
+
+
+    public function getImage( $imgRole, $imgCrop ) {
+
+        //select the row from mediables table that has the following:
+        //mediable_type: App\Models\Project
+        //mediable_id:  $this->id
+        //$imgRole
+        //$imgCrop
+        
+        //store the crops and media_id
+
+        //select the row from media that has the following:
+        //id = media_id
+
+        //save the following:
+        //uuid
+        //alt_text
+        //width
+        //height
+
+        //put it all together, get image from imgix
+
+        return $imgURL;
     }
 
     public function testFunction() {

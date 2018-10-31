@@ -9,6 +9,13 @@
         'required' => true,
     ])
 
+    @formField('medias', [
+        'name' => 'top',
+        'label' => 'Top image',
+        'note' => 'Minimum image width 1300px',
+        'max' => 2
+    ])
+
     {{-- Updated reference to repeater type in form --}}
     @formField('repeater', ['type' => 'accordion_items'])
 
