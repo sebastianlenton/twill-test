@@ -11,10 +11,6 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('site.homepage');
-});*/
-
 Route::get('/', 'HomepageController@index');
 
 Route::get('/projects', 'ProjectListingController@index');
