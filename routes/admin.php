@@ -25,13 +25,6 @@ Route::group(['prefix' => 'infopages'], function () {
 });
 
 
-
-//redirect /homepages to /homepage in order to disallow people from editing/creating new homepages. "In the end, there can be only one."
-Route::get('homepages', function() {
-    return redirect('homepage');
-});
-
-
 /*
 Design page (homepage) - this is to stop people from being able to see a homepage listing.
 On hold for the moment...
@@ -48,5 +41,11 @@ On hold for the moment...
 
 
 //to be deleted ///////
-Route::module('homepages');
-Route::name('homepage')->get('homepage', 'HomepageController@homepage');
+//Route::module('homepages');
+//Route::name('homepage')->get('homepage', 'HomepageController@homepage');
+
+//redirect /homepages to /homepage in order to disallow people from editing/creating new homepages. "In the end, there can be only one."
+
+/*Route::get('homepages', function() {
+    return redirect('homepage');
+});*/

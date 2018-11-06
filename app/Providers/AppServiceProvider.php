@@ -19,8 +19,14 @@ class AppServiceProvider extends ServiceProvider
         //this is to share variables across the whole app
         //https://laravel.com/docs/master/views#passing-data-to-views
         View::share('company_name', app(SettingRepository::class)->byKey('company_name'));
-        View::share('site_title', app(SettingRepository::class)->byKey('site_title'));
+
+        View::share('twitter_handle', app(SettingRepository::class)->byKey('twitter_handle'));
+
         View::share('email_address', app(SettingRepository::class)->byKey('email_address'));
+
+        View::share('telephone', app(SettingRepository::class)->byKey('telephone'));
+
+        View::share('office_address', app(SettingRepository::class)->byKey('office_address'));
     }
 
     /**

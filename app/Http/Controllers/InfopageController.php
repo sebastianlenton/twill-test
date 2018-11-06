@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
 
-use App\Models\Homepage;
+use App\Models\Infopage;
 
 //use carbon\Carbon;
 
-class HomepageController extends Controller
+class InfopageController extends Controller
 {
     public function __construct() {
 
@@ -18,9 +18,9 @@ class HomepageController extends Controller
 
     public function index() {
         //there should only ever be one of these
-        $homepage = Homepage::latest()->get();
+        $page = Infopage::latest()->get();
 
-        return view( 'site.homepage', [ 'item' => $homepage ] );
+        return view( 'site.info', [ 'item' => $page ] );
     }
     
 }

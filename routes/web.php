@@ -11,8 +11,12 @@
 |
 */
 
-Route::get('/', 'HomepageController@index');
+//Route::get('/', 'HomepageController@index');
+
+Route::get('/', 'DesignpageController@index');
 
 Route::get('/projects', 'ProjectListingController@index');
 
 Route::get('/projects/{projectSlug}', 'ProjectListingController@show');
+
+Route::get('/info', 'InfopageController@index');
