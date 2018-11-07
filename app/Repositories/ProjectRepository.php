@@ -18,4 +18,15 @@ class ProjectRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    public function afterSave($object, $fields) {
+        $this->updateBrowser($object, $fields, 'projecttags');
+        parent::afterSave($object, $fields);
+    }
+
+    public function getFormFields($object) {
+        $fields = parent::getFormFields($object);
+        $fields['browsers']['projecttags'] = $this->getFormFieldsForBrowser($object, 'projecttags');
+        return $fields;
+    }
 }

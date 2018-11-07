@@ -7,6 +7,9 @@ Homepage routes
 //temp
 Route::module('projects');
 
+//this was added to satisfy an error re tags browser scope... but why? See notes page 22.
+Route::module('projecttags');
+
 
 Route::group(['prefix' => 'designpages'], function () {
     Route::module('designpages');

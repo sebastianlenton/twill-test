@@ -31,13 +31,13 @@ class CreateProjectsTables extends Migration
             $table->integer('position')->unsigned()->nullable();
         });
 
-        // remove this if you're not going to use any translated field, ie. using the HasTranslation trait. If you do use it, create fields you want translatable in this table instead of the main table above. You do not need to create fields in both tables.
-        /*Schema::create('project_translations', function (Blueprint $table) {
-            createDefaultTranslationsTableFields($table, 'project');
-            // add some translated fields
-            // $table->string('title', 200)->nullable();
-            // $table->text('description')->nullable();
-        });*/
+        //create a table that will store the projecttag browser field relationship
+        //see https://github.com/area17/twill/issues/45
+        //https://bitbucket.org/wratke/twill_test/src
+        Schema::create('project_projecttag', function (Blueprint $table) {
+            createDefaultRelationshipTableFields($table, 'project', 'projecttag');
+            $table->integer('position')->unsigned()->index();
+        });
 
         // remove this if you're not going to use slugs, ie. using the HasSlug trait
         Schema::create('project_slugs', function (Blueprint $table) {
@@ -56,5 +56,8 @@ class CreateProjectsTables extends Migration
         Schema::dropIfExists('project_translations');
         Schema::dropIfExists('project_slugs');
         Schema::dropIfExists('projects');
+
+        //drop the associated projecttag table
+        Schema::dropIfExists('project_projecttag');
     }
 }

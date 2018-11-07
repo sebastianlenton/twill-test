@@ -15,6 +15,11 @@ class Project extends Model implements Sortable
 {
     use HasBlocks, HasSlug, HasMedias, HasFiles, HasRevisions, HasPosition;
 
+    public function projecttags()
+    {
+        return $this->belongsToMany(Projecttag::class)->withPivot('position')->orderBy('position');
+    }
+
     protected $fillable = [
         'published',
         'title',

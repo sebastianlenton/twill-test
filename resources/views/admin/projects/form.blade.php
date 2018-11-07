@@ -6,6 +6,13 @@
 
 @section('contentFields')
 
+    @formField('browser', [
+        'label' => 'Project Tags',
+        'max' => 3,
+        'name' => 'projecttags',
+        'moduleName' => 'projecttags'
+    ])
+
     {{-- <p>
         Add up to five images, that will be shown on the Design page. Images will rotate on hover. All images must be of the same dimensions, it is up to you to ensure dimensions are correct. Accepted formats: .jpg and .gif (TODO svg). This field is over-ridden if an URL is present in the 'Video' field. Note, when using animated gifs it is recommended that only one be uploaded.
     </p> --}}

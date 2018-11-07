@@ -2,11 +2,6 @@
 
 return [
 
-    /*'designpages' => [
-        'title' => 'Design',
-        'module' => true
-    ],*/
-
     'designpages' => [
         'title' => 'Design',
         'route' => 'admin.designpages.designpages.index',
@@ -38,20 +33,7 @@ return [
         'module' => true
     ],
 
-    /*'projects' => [
-        'title' => 'Projects',
-        'route' => 'admin.projects.projects.index',
-        'primary_navigation' => [
-            'projects' => [
-                'title' => 'Projects',
-                'module' => true,
-            ],
-            'projecttags' => [
-                'title' => 'Project Tags',
-                'module' => true,
-            ],
-        ]
-    ],*/
+    //endtemp
 
     'infopages' => [
         'title' => 'Info',
@@ -81,10 +63,5 @@ return [
         'route' => 'admin.settings',
         'params' => ['section' => 'form'],
     ],
-
-    /*'homepages' => [
-        'title' => 'TBD Homepage',
-        'route' => 'admin.homepage',
-    ],*/
 
 ];
