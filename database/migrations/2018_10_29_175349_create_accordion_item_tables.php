@@ -23,9 +23,9 @@ class CreateAccordionItemTables extends Migration
             $table->json('content')->nullable();
 
             //add foreign key
-            $table->integer('project_id')->unsigned();
-            $table->index('project_id');
-            $table->foreign('project_id')->references('id')->on('projects');
+            //$table->integer('project_id')->unsigned();
+            //$table->index('project_id');
+            //$table->foreign('project_id')->references('id')->on('projects');
 
             // add those 2 colums to enable publication timeframe fields (you can use publish_start_date only if you don't need to provide the ability to specify an end date)
             // $table->timestamp('publish_start_date')->nullable();

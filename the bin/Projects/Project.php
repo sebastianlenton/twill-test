@@ -18,14 +18,10 @@ class Project extends Model implements Sortable
     protected $fillable = [
         'published',
         'title',
-        //'description',
-        'video_url',
+        /*'documented',
+        
         'position',
-        'undocumented'
-        // 'public',
-        // 'featured',
-        // 'publish_start_date',
-        // 'publish_end_date',
+        'video_url'*/
     ];
 
     // uncomment and modify this as needed if you use the HasTranslation trait
@@ -35,15 +31,15 @@ class Project extends Model implements Sortable
     //     'active',
     // ];
     
-    // uncomment and modify this as needed if you use the HasSlug trait
+    //uncomment and modify this as needed if you use the HasSlug trait
     public $slugAttributes = [
-         'title',
+        'title',
     ];
 
     // add checkbox fields names here (published toggle is itself a checkbox)
     public $checkboxes = [
         'published',
-        'undocumented'
+        //'documented'
     ];
 
     // uncomment and modify this as needed if you use the HasMedias trait
@@ -65,7 +61,7 @@ class Project extends Model implements Sortable
             ]
         ],
         'index_page_image' => [
-            'default' => [
+            'default' [
                 [
                     'name' => '3:2',
                     'ratio' => 3 / 2,
@@ -73,4 +69,14 @@ class Project extends Model implements Sortable
             ]
         ]
     ];
+
+    //Renamed relationship to use underscore like repeater type
+    /*public function accordion_items()
+    {
+        // Fixed hasMany call with correct reference to AccordionItem model
+        return $this->hasMany(AccordionItem::class);
+
+    }*/
+
+    
 }

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
 
-use App\Models\Homepage;
+use App\Models\Designpage;
 
 //use carbon\Carbon;
 
@@ -20,7 +20,7 @@ class DesignpageController extends Controller
         //there should only ever be one of these
         $homepage = Designpage::latest()->get();
 
-        return view( 'site.desgnpage', [ 'item' => $homepage ] );
+        return view( 'site.designpage', [ 'item' => $homepage ] );
     }
     
 }

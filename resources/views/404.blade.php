@@ -1,8 +1,8 @@
 {{-- homepage --}}
 
-@extends('site.common.app')
+{{--@extends('site.common.app')--}}
 
-@include('site.common.navigation')
+{{--@include('site.common.navigation')--}}
 
 @section('content')
 

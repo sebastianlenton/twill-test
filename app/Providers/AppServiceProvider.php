@@ -18,15 +18,38 @@ class AppServiceProvider extends ServiceProvider
     {
         //this is to share variables across the whole app
         //https://laravel.com/docs/master/views#passing-data-to-views
-        View::share('company_name', app(SettingRepository::class)->byKey('company_name'));
 
-        View::share('twitter_handle', app(SettingRepository::class)->byKey('twitter_handle'));
+        try {
 
-        View::share('email_address', app(SettingRepository::class)->byKey('email_address'));
+            $company_name = app(SettingRepository::class)->byKey('company_name');
 
-        View::share('telephone', app(SettingRepository::class)->byKey('telephone'));
+            $twitter_handle = app(SettingRepository::class)->byKey('twitter_handle');
 
-        View::share('office_address', app(SettingRepository::class)->byKey('office_address'));
+            $email_address = app(SettingRepository::class)->byKey('email_address');
+
+            $telephone = app(SettingRepository::class)->byKey('telephone');
+
+            $office_address = app(SettingRepository::class)->byKey('office_address');
+
+        } catch(\Exception $e) {
+
+            $company_name = 'settings table does not exist';
+            $twitter_handle = 'settings table does not exist';
+            $email_address = 'settings table does not exist';
+            $telephone = 'settings table does not exist';
+            $office_address = 'settings table does not exist';
+            
+        }
+
+        View::share('company_name', $company_name);
+
+        View::share('twitter_handle', $twitter_handle);
+
+        View::share('email_address', $email_address);
+
+        View::share('telephone', $telephone);
+
+        View::share('office_address', $office_address);
     }
 
     /**

@@ -30,6 +30,14 @@ return [
         ],
     ],
 
+
+    //temp
+
+    'projects' => [
+        'title' => 'Projects',
+        'module' => true
+    ],
+
     /*'projects' => [
         'title' => 'Projects',
         'route' => 'admin.projects.projects.index',
@@ -69,7 +77,7 @@ return [
     ],
 
     'settings' => [
-        'title' => 'Settings',
+        'title' => 'Contact Details',
         'route' => 'admin.settings',
         'params' => ['section' => 'form'],
     ],

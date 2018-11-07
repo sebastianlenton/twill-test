@@ -3,7 +3,10 @@
 /*
 Homepage routes
  */
-//Route::module('designpages');
+
+//temp
+Route::module('projects');
+
 
 Route::group(['prefix' => 'designpages'], function () {
     Route::module('designpages');

@@ -7,9 +7,9 @@
         'maxlength' => 300
     ])
 
-    @formField('input', [
+    @formField('WYSIWYG', [
         'name' => 'description',
         'label' => 'Description',
-        'type' => 'textarea'
+        'toolbarOptions' => ['link']
     ])
 @stop

@@ -19,7 +19,7 @@ class AccordionItem extends Model
         'description',
         'content',
         //Added project_id in AccordionItem fillable
-        'project_id',
+        //'project_id',
         // 'position',
         // 'public',
         // 'featured',

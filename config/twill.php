@@ -23,20 +23,20 @@ return [
                 'icon' => 'text',
                 'component' => 'a17-block-address',
             ],
-            'projecttag' => [
+            /*'projecttag' => [
                 'title' => 'Project Tags',
                 'icon' => 'text',
                 'component' => 'a17-block-projecttag',
-            ]
+            ]*/
         ],
-        'repeaters' => [
+        /*'repeaters' => [
             'accordion_items' => [
                 'title' => 'Accordion',
                 'trigger' => 'Add accordion',
                 'component' => 'a17-block-accordion_item',
                 'max' => 10,
             ],
-        ],
+        ],*/
         'browser_route_prefixes' => [
             //'projecttags' => 'content',
         ],

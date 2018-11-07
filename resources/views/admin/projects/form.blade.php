@@ -1,73 +1,74 @@
-@extends('twill::layouts.form')
+@extends('twill::layouts.form', [
+    'additionalFieldsets' => [
+        ['fieldset' => 'index-page-view-fields', 'label' => 'Index Page View Fields'],
+    ]
+])
 
 @section('contentFields')
 
-    @formField('input', [
-        'name' => 'description',
-        'label' => 'Description',
-        'maxlength' => 100,
-        'required' => true,
-    ])
+    {{-- <p>
+        Add up to five images, that will be shown on the Design page. Images will rotate on hover. All images must be of the same dimensions, it is up to you to ensure dimensions are correct. Accepted formats: .jpg and .gif (TODO svg). This field is over-ridden if an URL is present in the 'Video' field. Note, when using animated gifs it is recommended that only one be uploaded.
+    </p> --}}
+
 
     @formField('medias', [
-        'name' => 'top',
-        'label' => 'Top image',
-        'note' => 'Minimum image width 1300px',
-        'max' => 2
+        'name' => 'design_page_images',
+        'label' => 'Design page image(s)',
+        'note' => 'TODO image size validation.',
+        'max' => 5
     ])
 
-    {{-- Updated reference to repeater type in form --}}
-    @formField('repeater', ['type' => 'accordion_items'])
 
-    {{--@formField('repeater', [
-      'name' => 'myRepeater',
-      'type' => 'accordion_item']
-    )--}}
+    {{-- <p>
+        Add an image that will over-ride the above on mobile (optional).
+    </p> --}}
 
-    @formField('color', [
-      'name' => 'main-color',
-      'label' => 'Main color'
+    @formField('medias', [
+        'name' => 'design_page_image_mobile',
+        'label' => 'Design page image (mobile, optional)',
+        'note' => 'TODO image size validation.',
+        'max' => 1
     ])
 
-    @formField('block_editor')
 
-    {{-- can't get this to work...
-      @formField('repeater', ['type' => 'editor'])
-    --}}
+    {{-- <p>
+        Add a video URL. This will over-ride the above images. URL must be valid, or else the video embed will be broken on the front-end. Vimeo only at time of writing (7/11/2018)
+    </p> --}}
+
+    @formField('input', [
+        'name' => 'video_url',
+        'label' => 'Video URL (Vimeo only. TODO add support for YT etc)'
+    ])
 
 @stop
 
 @section('fieldsets')
 
-    <a17-fieldset title="Media" id="media">
+    <a17-fieldset title="Index Page View Fields" id="index-page-view-fields">
 
-        @formField('medias', [
-            'name' => 'cover',
-            'label' => 'Cover image',
-            'note' => 'Minimum image width 1300px',
-            'max' => 2
+        {{-- <p>
+            Check the below to set the project as "undocumented" on the Index page listing.
+        </p> --}}
+
+        @formField('checkbox', [
+            'name' => 'undocumented',
+            'label' => 'Undocumented?'
         ])
 
+        {{-- <p>
+            Optional: add a specific image for the Index page listing.
+        </p> --}}
+
         @formField('medias', [
-            'name' => 'testImages',
-            'label' => 'Test images',
-            'note' => 'These are test images',
+            'name' => 'index_page_image',
+            'label' => 'Index page image (optional)',
+            'note' => 'TODO image size validation.',
+            'max' => 1
         ])
 
+        
+
+
     </a17-fieldset>
-
-    @formField('input', [
-      'name' => 'additionalRemark',
-      'label' => 'Additional Remark',
-      'maxlength' => 100
-    ])
-
-  {{-- can't get this to work...
-
-    <a17-fieldset title="Videos" id="videos" :open="true">
-        @formField('repeater', ['type' => 'quote'])
-    </a17-fieldset>
-
-  --}}
 
 @stop

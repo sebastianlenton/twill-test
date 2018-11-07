@@ -14,8 +14,7 @@
     ])
 
     @formField('input', [
-        'name' => 'URL',
-        'type' => 'URL',
+        'name' => 'url',
         'label' => 'URL'
     ])
 @stop

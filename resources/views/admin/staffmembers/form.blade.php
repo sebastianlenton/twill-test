@@ -26,10 +26,10 @@
         'note' => 'Minimum image width: TODO ENTER WIDTH'
     ])
 
-    @formField('input', [
+    @formField('WYSIWYG', [
         'name' => 'bio',
         'label' => 'Biography',
-        'type' => 'textarea'
+        'toolbarOptions' => ['link'],
     ])
 
 @stop
