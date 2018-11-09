@@ -8,7 +8,7 @@
 @section('contentFields')
 
     @formField('browser', [
-        'label' => 'Project Tags',
+        'label' => 'Project tags',
         'max' => 3,
         'name' => 'projecttags',
         'moduleName' => 'projecttags'
@@ -16,7 +16,7 @@
 
     @formField('date_picker', [
         'name' => 'publication_date',
-        'label' => 'Publication',
+        'label' => 'Publication date',
         'minDate' => '2018-12-01 12:00'
     ])
 

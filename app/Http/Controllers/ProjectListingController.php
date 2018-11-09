@@ -31,13 +31,15 @@ class ProjectListingController extends Controller
 
         $project = $this->getProjectBySlug( $projectSlug );
 
+        $project = $this->getProjectTags( $project );
+
         return view( 'site.project', [ 'item' => $project ] );
 
     }
 
     
     /**
-     * Go through the projects array and get the slug for each one
+     * On the Listing page, go through the projects array and get the slug for each one
      * @param  object $projects an array of projects
      * @return object $projectsProcessed array of projects with slugs
      */
@@ -73,6 +75,49 @@ class ProjectListingController extends Controller
         return $project;
     }
 
+
+    /**
+     * Get the tags for a project and add them to the project object
+     * @param  object $project
+     * @return object $project
+     */
+    function getProjectTags( $project ) {
+
+        //first get the IDs of the project tags from the pivot table
+        $tagIDs = DB::table('project_projecttag')->where('project_id', $project->id)->pluck('projecttag_id');
+
+        if( count( $tagIDs ) > 0 ) {
+
+            $tagData = [];      //array to store tag name and slug
+
+            //now assign the tag IDs to their data (title and slug):
+            foreach( $tagIDs as $tagID ) {
+
+                //get the title
+                $tagTitle = DB::table('projecttags')->where('id', $tagID)->where('published', 1)->value( 'title' );
+
+                //if the title is not emtpy (hence the tag is draft)get the slug and add to array to be added to object
+                if( !empty($tagTitle) ) {
+
+                    $tagSlug = DB::table('projecttag_slugs')->where('projecttag_id', $tagID)->value( 'slug' );
+
+                    if( !empty($tagSlug) ) {
+                        $thisTagData['tagName'] = $tagTitle;
+                        $thisTagData['tagSlug'] = $tagSlug;
+                        array_push( $tagData, $thisTagData );
+                    }
+                    
+                }
+
+            }
+
+            $project->tagData = $tagData;
+
+        }
+
+        return $project;
+
+    }
 
 }
 

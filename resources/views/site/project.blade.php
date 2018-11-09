@@ -4,36 +4,28 @@
 
 @section('content')
 
+    
+
     {{ $item }}
 
     <h1>{{ $item->title }}</h1>
-
-    <img src="{{ $item->image('top','default') }}">
-
-    {{-- I think this will return null if there's no img, due to the true at the end --}}
-    {{ $item->image('norole','nocrop', false, true) }}
-
-    <img width="400" height="400" src="{{ $item->lowQualityImagePlaceholder('top','default') }}">
-
-
     
-    <p>{{ $item->description }}</p>
+    @foreach( $item->tagData as $tag )
 
-    {!! $item->renderBlocks(false) !!}
+        <a href="/project/tag/{{ $tag['tagSlug'] }}">{{ $tag['tagName'] }}</a><br>
+        <br>
 
-    <pre>
-    <?php
-        //print_r( $item->testFunction() );
+    @endforeach
 
-        //print_r( $item->attributes );
-        //print_r( $item->attributes['description'] );
-        //print_r( $item );
 
-        //print_r( $item );
-        //print_r( $item['attributes'] );
-        //print_r( $item['original'] );
-        //print_r( $item->original );
-    ?>
-    </pre>
+    <img src="{{ $item->image('project_page_image','default') }}">
+
+    <img src="{{ $item->image('project_page_image_mobile','default') }}">    
+    
+    {!! $item->project_page_description !!}
+
+    {!! $item->project_page_collaborators !!}
+
+    {{-- {!! $item->renderBlocks(false) !!} --}}
 
 @endsection

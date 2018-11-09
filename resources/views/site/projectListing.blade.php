@@ -16,7 +16,7 @@
 
     <ul>
         <li>
-            <a href="/projects/{{ $project->projectPermalink }}">
+            <a href="/project/{{ $project->projectPermalink }}">
                 {{ $project->title }}
             </a>
         </li>
