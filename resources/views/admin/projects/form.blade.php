@@ -90,13 +90,17 @@
             'placeholder' => 'Enter collaborators...'
         ])
 
+        {{-- @formField('block_editor', [
+            'blocks' => ['project_imgFullWidth', 'project_imgText', 'project_longformText']
+        ])--}}
+
+        {{-- @formField('block_editor') --}}
+
+        @formField('block_editor', [
+            'blocks' => ['imgfullwidth', 'imgtext', 'shortformtext','longformtext']
+        ])
+
     </a17-fieldset>
-
-@stop
-
-
-
-@section('fieldsets')
 
     <a17-fieldset title="Index Page View Fields" id="index-page-view-fields">
 
@@ -119,9 +123,6 @@
             'note' => 'TODO image size validation.',
             'max' => 1
         ])
-
-        
-
 
     </a17-fieldset>
 
