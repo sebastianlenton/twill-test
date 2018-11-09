@@ -27,35 +27,33 @@ return [
                 'icon' => 'text',
                 'component' => 'a17-block-imgfullwidth',
             ],
-
-
-
-            /*'quote' => [
-                'title' => 'Quote',
-                'icon' => 'text',
-                'component' => 'a17-block-quote',
-            ],
-            'editor' => [
-                'title' => 'Editor',
-                'icon' => 'text',
-                'component' => 'a17-block-editor',
-            ],*/
-            /*'accordion' => [
-                'title' => 'Accordion',
-                'icon' => 'text',
-                'component' => 'a17-block-accordion',
-            ],*/
-            /*'address' => [
-                'title' => 'Address',
-                'icon' => 'text',
-                'component' => 'a17-block-address',
-            ],*/
-            /*'projecttag' => [
-                'title' => 'Project Tags',
-                'icon' => 'text',
-                'component' => 'a17-block-projecttag',
-            ]*/
         ],
+
+        'crops' => [
+            'imgfullwidth' => [
+                'desktop' => [
+                    [
+                        'name' => 'desktop',
+                        'ratio' => 0,
+                        'minValues' => [
+                            'width' => 100,
+                            'height' => 100,
+                        ],
+                    ],
+                ],
+            ],
+            'imgfullwidth-mobile' => [
+                'mobile' => [
+                    [
+                        'name' => 'mobile',
+                        'ratio' => 0,
+                    ],
+                ],
+            ],
+        ],
+        
+
+
         /*'repeaters' => [
             'accordion_items' => [
                 'title' => 'Accordion',
