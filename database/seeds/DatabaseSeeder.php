@@ -25,7 +25,6 @@ class DatabaseSeeder extends Seeder
         $this->call(SettingsTableSeeder::class);
         $this->call(SettingTranslationsTableSeeder::class);
         $this->call(StaffmembersTableSeeder::class);
-        $this->call(StaffmemberRevisionsTableSeeder::class);
         $this->call(DesignpagesTableSeeder::class);
         $this->call(DesignpageRevisionsTableSeeder::class);
     }

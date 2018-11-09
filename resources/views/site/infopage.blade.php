@@ -34,8 +34,7 @@
         <img src="{{ $staffmember->image('image', 'default') }}" alt="{{ $staffmember->imageAltText('image') }}">
         
         <p>
-            {{ $staffmember->first_name }}
-            {{ $staffmember->last_name }}
+            {{ $staffmember->title }}
             <br>
             {{ $staffmember->company_role }}
         </p>

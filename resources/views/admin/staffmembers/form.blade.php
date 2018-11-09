@@ -3,18 +3,6 @@
 @section('contentFields')
 
     @formField('input', [
-        'name' => 'first_name',
-        'label' => 'First Name',
-        'maxlength' => 200
-    ])
-
-    @formField('input', [
-        'name' => 'last_name',
-        'label' => 'Last Name',
-        'maxlength' => 200
-    ])
-
-    @formField('input', [
         'name' => 'company_role',
         'label' => 'Job Title',
         'maxlength' => 200

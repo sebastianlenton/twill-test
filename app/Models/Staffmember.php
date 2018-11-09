@@ -13,8 +13,8 @@ class Staffmember extends Model
     protected $fillable = [
         'published',
         'title',
-        'first_name',
-        'last_name',
+        //'first_name',
+        //'last_name',
         'company_role',
         'bio'
         //'description',
