@@ -11,13 +11,13 @@
     @formField('WYSIWYG', [
         'name' => 'intro',
         'label' => 'Agency Introduction',
-        'toolbarOptions' => ['list-ordered', 'list-unordered', 'link'],
+        'toolbarOptions' => ['list-unordered', 'link'],
     ])
 
     @formField('WYSIWYG', [
         'name' => 'capabilities',
         'label' => 'Agency Capabilities',
-        'toolbarOptions' => ['list-ordered', 'list-unordered', 'link'],
+        'toolbarOptions' => ['list-unordered', 'link'],
     ])
 
     @formField('medias', [
@@ -29,7 +29,7 @@
     @formField('WYSIWYG', [
         'name' => 'intro_sm',
         'label' => 'Standards Manual Introduction',
-        'toolbarOptions' => ['list-ordered', 'list-unordered', 'link'],
+        'toolbarOptions' => ['list-unordered', 'link'],
     ])
 
 @stop

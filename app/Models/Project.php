@@ -26,11 +26,12 @@ class Project extends Model implements Sortable
         //'description',
         'video_url',
         'position',
-        'undocumented'
-        // 'public',
-        // 'featured',
-        // 'publish_start_date',
-        // 'publish_end_date',
+        'undocumented',
+        'publication_date',
+
+        'project_page_description',
+        'project_page_collaborators',
+
     ];
 
     // uncomment and modify this as needed if you use the HasTranslation trait
@@ -69,6 +70,24 @@ class Project extends Model implements Sortable
                 ]
             ]
         ],
+
+        'project_page_image' => [
+            'default' => [
+                [
+                    'name' => 'default',
+                    'ratio' => 3 / 2,
+                ]
+            ]
+        ],
+        'project_page_image_mobile' => [
+            'default' => [
+                [
+                    'name' => 'default',
+                    'ratio' => 1,
+                ]
+            ]
+        ],
+
         'index_page_image' => [
             'default' => [
                 [

@@ -1,5 +1,6 @@
 @extends('twill::layouts.form', [
     'additionalFieldsets' => [
+        ['fieldset' => 'project-page-view-fields', 'label' => 'Project Page View Fields'],
         ['fieldset' => 'index-page-view-fields', 'label' => 'Index Page View Fields'],
     ]
 ])
@@ -11,6 +12,12 @@
         'max' => 3,
         'name' => 'projecttags',
         'moduleName' => 'projecttags'
+    ])
+
+    @formField('date_picker', [
+        'name' => 'publication_date',
+        'label' => 'Publication',
+        'minDate' => '2018-12-01 12:00'
     ])
 
     {{-- <p>
@@ -48,6 +55,46 @@
     ])
 
 @stop
+
+
+
+@section('fieldsets')
+
+    <a17-fieldset title="Project Page View Fields" id="project-page-view-fields">
+
+        @formField('medias', [
+            'name' => 'project_page_image',
+            'label' => 'Project page image',
+            'note' => 'TODO image size validation.',
+            'max' => 1
+        ])
+
+        @formField('medias', [
+            'name' => 'project_page_image_mobile',
+            'label' => 'Project page image (mobile, optional)',
+            'note' => 'TODO image size validation.',
+            'max' => 1
+        ])
+
+        @formField('wysiwyg', [
+            'name' => 'project_page_description',
+            'label' => 'Project page description text',
+            'toolbarOptions' => ['list-unordered', 'link'],
+            'placeholder' => 'Enter description...'
+        ])
+
+        @formField('wysiwyg', [
+            'name' => 'project_page_collaborators',
+            'label' => 'Project page collaborators',
+            'toolbarOptions' => ['list-unordered', 'link'],
+            'placeholder' => 'Enter collaborators...'
+        ])
+
+    </a17-fieldset>
+
+@stop
+
+
 
 @section('fieldsets')
 

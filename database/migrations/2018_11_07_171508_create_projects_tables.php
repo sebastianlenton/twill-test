@@ -18,6 +18,13 @@ class CreateProjectsTables extends Migration
             $table->text('video_url')->nullable();
 
             $table->boolean('undocumented')->default(0);
+
+            $table->dateTime('publication_date')->nullable();
+
+            $table->text('project_page_description')->nullable();
+
+            $table->text('project_page_collaborators')->nullable();
+            
             
             // your generated model and form include a description field, to get you started, but feel free to get rid of it if you don't need it
             //$table->text('description')->nullable();
@@ -55,9 +62,11 @@ class CreateProjectsTables extends Migration
         Schema::dropIfExists('project_revisions');
         Schema::dropIfExists('project_translations');
         Schema::dropIfExists('project_slugs');
-        Schema::dropIfExists('projects');
 
         //drop the associated projecttag table
         Schema::dropIfExists('project_projecttag');
+
+        Schema::dropIfExists('projects');
+
     }
 }
