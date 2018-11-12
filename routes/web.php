@@ -15,13 +15,15 @@ Route::get('/', 'DesignpageController@index');
 
 
 
-Route::get('/project/{projectSlug}', 'ProjectListingController@show');
+Route::get('/project/{projectSlug}', 'ProjectController@show');
 
 Route::get('/info', 'InfopageController@index');
+
+Route::get('/index', 'ProjectController@index');
 
 
 
 //dev only
 
 //temp project listing
-Route::get('/projects', 'ProjectListingController@index');
+Route::get('/projects', 'ProjectController@index');

@@ -21,6 +21,10 @@ class CreateProjectsTables extends Migration
 
             $table->dateTime('publication_date')->nullable();
 
+            //need to check if the below works:
+            //as per https://stackoverflow.com/questions/18067614/how-can-i-set-the-default-value-of-a-timestamp-column-to-the-current-timestamp-w
+            //$table->dateTime('publication_date')->nullable()->useCurrent();
+
             $table->text('project_page_description')->nullable();
 
             $table->text('project_page_collaborators')->nullable();

@@ -5,13 +5,10 @@
 @section('content')
 
     <h1>{{ $item->title }}</h1>
-    
-    @foreach( $item->tagData as $tag )
 
-        <a href="/project/tag/{{ $tag['tagSlug'] }}">{{ $tag['tagName'] }}</a><br>
-        <br>
-
-    @endforeach
+    @include('site.partials.projectTagsList', [
+        'projectTags' => $item->tagData
+    ])
 
     {{ $item->publication_date }}<br>
     {{ $item->undocumented }}<br>
@@ -20,7 +17,6 @@
     <p>
         Index page image:<br><img src="{{ $item->image('index_page_image','default') }}">
     </p>
-
 
     <img src="{{ $item->image('project_page_image','default') }}">
 

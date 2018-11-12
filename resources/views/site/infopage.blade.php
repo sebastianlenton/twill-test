@@ -1,4 +1,4 @@
-{{-- homepage --}}
+{{-- infopage --}}
 
 @extends('site.common.app')
 

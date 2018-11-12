@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * TODO:
+ * - injectProjectSlugs works across a foreach loop, getProjectTags() does not- bit shit really!
+ */
+
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -8,7 +14,7 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\Project;
 
-class ProjectListingController extends Controller
+class ProjectController extends Controller
 {
     public function __construct() {
 
@@ -18,11 +24,16 @@ class ProjectListingController extends Controller
     //this is for the project listing
     public function index() {
 
-        $projects = Project::latest()->get();
+        //get projects that are published, order by date with any null dates at end
+        $projects = Project::where( 'published', 1 )->orderByRaw('ISNULL(publication_date), publication_date DESC')->get();
 
         $projects = $this->injectProjectSlugs($projects);
 
-        return view( 'site.projectListing', [ 'projects' => $projects ] );
+        foreach( $projects as $project ) {
+            $project = $this->injectProjectTags($project);
+        }
+
+        return view( 'site.indexListing', [ 'projects' => $projects ] );
     }
 
 
@@ -31,7 +42,7 @@ class ProjectListingController extends Controller
 
         $project = $this->getProjectBySlug( $projectSlug );
 
-        $project = $this->getProjectTags( $project );
+        $project = $this->injectProjectTags( $project );
 
         return view( 'site.project', [ 'item' => $project ] );
 
@@ -40,7 +51,7 @@ class ProjectListingController extends Controller
     
     /**
      * On the Listing page, go through the projects array and get the slug for each one
-     * @param  object $projects an array of projects
+     * @param  object $projects a collection of projects
      * @return object $projectsProcessed array of projects with slugs
      */
     function injectProjectSlugs( $projects ) {
@@ -81,7 +92,7 @@ class ProjectListingController extends Controller
      * @param  object $project
      * @return object $project
      */
-    function getProjectTags( $project ) {
+    function injectProjectTags( $project ) {
 
         //first get the IDs of the project tags from the pivot table
         $tagIDs = DB::table('project_projecttag')->where('project_id', $project->id)->pluck('projecttag_id');
