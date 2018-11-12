@@ -1,9 +1,5 @@
 <div style="background:pink;margin-bottom:2rem;">
 
-    <pre>
-        <?php print_r( $block->content ); ?>
-    </pre>
-
     <img src="{{ $block->image('imgfullwidth', 'desktop') }}">
 
     <img src="{{ $block->image('imgfullwidth-mobile', 'mobile') }}">
