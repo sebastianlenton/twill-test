@@ -27,6 +27,12 @@ return [
                 'icon' => 'text',
                 'component' => 'a17-block-imgfullwidth',
             ],
+
+            'project_preview' => [
+                'title' => 'Project preview',
+                'icon' => 'image',
+                'component' => 'a17-block-project_preview',
+            ]
         ],
 
         'crops' => [

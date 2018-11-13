@@ -15,7 +15,7 @@ class Designpage extends Model
     protected $fillable = [
         'published',
         'title',
-        'description',
+        'seo_meta_description',
         // 'position',
         // 'public',
         // 'featured',
