@@ -32,7 +32,20 @@ return [
                 'title' => 'Project preview',
                 'icon' => 'image',
                 'component' => 'a17-block-project_preview',
-            ]
+            ],
+
+            'experiment_preview' => [
+                'title' => 'Experiment preview',
+                'icon' => 'image',
+                'component' => 'a17-block-experiment_preview',
+            ],
+
+            'news' => [
+                'title' => 'News story',
+                'icon' => 'text',
+                'component' => 'a17-block-news',
+            ],
+
         ],
 
         'crops' => [
@@ -65,8 +78,6 @@ return [
                 ],
             ],
         ],
-        
-
 
         'repeaters' => [
             'experimentimages' => [
@@ -76,9 +87,13 @@ return [
                 'max' => 3,
             ],
         ],
-        //'browser_route_prefixes' => [
-            //'projecttags' => 'content',
-        //],
+
+        'browser_route_prefixes' => [
+            'projects' => 'designpages',
+            'experiments' => 'designpages',
+            'newsitems' => 'designpages',
+        ],
+
     ],
     'enabled' => [
         'settings' => true

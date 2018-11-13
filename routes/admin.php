@@ -9,8 +9,11 @@ Route::module('projects');
 Route::module('experiments');
 
 
-//this was added to satisfy an error re tags browser scope... but why? See notes page 22.
+//this was added to satisfy an error re tags browser field... but why? See notes page 22.
 Route::module('projecttags');
+
+//again had to add this to satisfy error re projects browser field (block for design page)
+//Route::module('designpages.projectPreview');
 
 
 Route::group(['prefix' => 'designpages'], function () {

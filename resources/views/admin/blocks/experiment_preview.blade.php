@@ -1,12 +1,12 @@
 @formField('browser', [
     'routePrefix' => 'designpages',
-    'moduleName' => 'projects',
-    'name' => 'projects',
-    'label' => 'Project preview'
+    'moduleName' => 'experiments',
+    'name' => 'experiments',
+    'label' => 'Experiment preview'
 ])
 
 @formField('input', [
-    'name' => 'project_preview_width',
+    'name' => 'experiment_preview_width',
     'label' => 'Column width (1-12)',
     'maxlength' => 2
 ])
