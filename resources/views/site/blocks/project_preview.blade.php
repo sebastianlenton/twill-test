@@ -1,1 +1,2 @@
-<?php var_dump( $block->content['browsers'] ); ?>
+{{ $block->input('project_preview_width') }}
+{{ $block->projects }}

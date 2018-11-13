@@ -26,7 +26,7 @@ class ProjectController extends Controller
     public function index() {
 
         //get projects that are published, order by date with any null dates at end
-        $projects = Project::where( 'published', 1 )->orderByRaw('ISNULL(publication_date), publication_date DESC')->get();
+        $projects = Project::where('published', 1)->orderByRaw('ISNULL(publication_date), publication_date DESC')->get();
 
         $projects = $this->injectProjectSlugs($projects);
 

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Designpage;
+use App\Models\Project;
 
 //use carbon\Carbon;
 
@@ -17,10 +18,14 @@ class DesignpageController extends Controller
     }
 
     public function index() {
+
         //there should only ever be one of these
         $homepage = Designpage::latest()->get();
 
-        return view( 'site.designpage', [ 'item' => $homepage ] );
+        return view( 'site.designpage', [
+            'item' => $homepage
+        ] );
+
     }
     
 }
