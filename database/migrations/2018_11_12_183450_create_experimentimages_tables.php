@@ -3,11 +3,11 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateExperimentsTables extends Migration
+class CreateExperimentimagesTables extends Migration
 {
     public function up()
     {
-        Schema::create('experiments', function (Blueprint $table) {
+        Schema::create('experimentimages', function (Blueprint $table) {
             
             // this will create an id, a "published" column, and soft delete and timestamps columns
             createDefaultTableFields($table);
@@ -16,6 +16,15 @@ class CreateExperimentsTables extends Migration
             $table->string('title', 200)->nullable();
             
             // your generated model and form include a description field, to get you started, but feel free to get rid of it if you don't need it
+            $table->text('caption')->nullable();
+
+            $table->integer('image_width')->unsigned()->nullable();
+
+            //add foreign key
+            $table->integer('experiment_id')->unsigned();
+            $table->index('experiment_id');
+            $table->foreign('experiment_id')->references('id')->on('experiments');
+
 
             // add those 2 colums to enable publication timeframe fields (you can use publish_start_date only if you don't need to provide the ability to specify an end date)
             // $table->timestamp('publish_start_date')->nullable();
@@ -23,37 +32,33 @@ class CreateExperimentsTables extends Migration
 
 
             // use this column with the HasPosition trait
-            $table->integer('position')->unsigned()->nullable();
-
-            $table->text('caption')->nullable();
-
-            $table->integer('padding_top')->unsigned()->nullable();
+            // $table->integer('position')->unsigned()->nullable();
         });
 
         // remove this if you're not going to use any translated field, ie. using the HasTranslation trait. If you do use it, create fields you want translatable in this table instead of the main table above. You do not need to create fields in both tables.
-        /*Schema::create('experiment_translations', function (Blueprint $table) {
-            createDefaultTranslationsTableFields($table, 'experiment');
+        Schema::create('experimentimage_translations', function (Blueprint $table) {
+            createDefaultTranslationsTableFields($table, 'experimentimage');
             // add some translated fields
             // $table->string('title', 200)->nullable();
             // $table->text('description')->nullable();
-        });*/
+        });
 
         // remove this if you're not going to use slugs, ie. using the HasSlug trait
-        /*Schema::create('experiment_slugs', function (Blueprint $table) {
-            createDefaultSlugsTableFields($table, 'experiment');
-        });*/
+        Schema::create('experimentimage_slugs', function (Blueprint $table) {
+            createDefaultSlugsTableFields($table, 'experimentimage');
+        });
 
         // remove this if you're not going to use revisions, ie. using the HasRevisions trait
-        Schema::create('experiment_revisions', function (Blueprint $table) {
-            createDefaultRevisionsTableFields($table, 'experiment');
+        Schema::create('experimentimage_revisions', function (Blueprint $table) {
+            createDefaultRevisionsTableFields($table, 'experimentimage');
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('experiment_revisions');
-        Schema::dropIfExists('experiment_translations');
-        Schema::dropIfExists('experiment_slugs');
-        Schema::dropIfExists('experiments');
+        Schema::dropIfExists('experimentimage_revisions');
+        Schema::dropIfExists('experimentimage_translations');
+        Schema::dropIfExists('experimentimage_slugs');
+        Schema::dropIfExists('experimentimages');
     }
 }

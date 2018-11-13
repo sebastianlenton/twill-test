@@ -2,7 +2,7 @@
 
 /**
  * TODO:
- * - injectProjectSlugs works across a foreach loop, getProjectTags() does not- bit shit really!
+ * - injectProjectSlugs works across a foreach loop, getProjectTags() does not
  */
 
 

@@ -8,13 +8,13 @@
         'note' => 'Minimum image width: TODO ENTER WIDTH'
     ])
 
-    @formField('WYSIWYG', [
+    @formField('wysiwyg', [
         'name' => 'intro',
         'label' => 'Agency Introduction',
         'toolbarOptions' => ['list-unordered', 'link'],
     ])
 
-    @formField('WYSIWYG', [
+    @formField('wysiwyg', [
         'name' => 'capabilities',
         'label' => 'Agency Capabilities',
         'toolbarOptions' => ['list-unordered', 'link'],
@@ -26,7 +26,7 @@
         'note' => 'Minimum image width: TODO ENTER WIDTH'
     ])
 
-    @formField('WYSIWYG', [
+    @formField('wysiwyg', [
         'name' => 'intro_sm',
         'label' => 'Standards Manual Introduction',
         'toolbarOptions' => ['list-unordered', 'link'],

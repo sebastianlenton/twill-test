@@ -21,6 +21,8 @@ Route::get('/info', 'InfopageController@index');
 
 Route::get('/index', 'ProjectController@index');
 
+Route::get('/experiments', 'ExperimentController@index');
+
 
 
 //dev only

@@ -26,6 +26,7 @@ class ProjectRepository extends ModuleRepository
 
     public function getFormFields($object) {
         $fields = parent::getFormFields($object);
+
         $fields['browsers']['projecttags'] = $this->getFormFieldsForBrowser($object, 'projecttags');
         return $fields;
     }

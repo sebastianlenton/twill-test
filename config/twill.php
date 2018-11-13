@@ -50,18 +50,26 @@ return [
                     ],
                 ],
             ],
+            'experiment_image' => [
+                'default' => [
+                    [
+                        'name' => 'default',
+                        'ratio' => 0
+                    ],
+                ],
+            ],
         ],
         
 
 
-        /*'repeaters' => [
-            'accordion_items' => [
-                'title' => 'Accordion',
-                'trigger' => 'Add accordion',
-                'component' => 'a17-block-accordion_item',
-                'max' => 10,
+        'repeaters' => [
+            'experimentimages' => [
+                'title' => 'Images',
+                'trigger' => 'Add image',
+                'component' => 'a17-block-experimentimage',
+                'max' => 3,
             ],
-        ],*/
+        ],
         //'browser_route_prefixes' => [
             //'projecttags' => 'content',
         //],

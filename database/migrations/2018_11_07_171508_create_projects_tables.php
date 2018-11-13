@@ -21,9 +21,14 @@ class CreateProjectsTables extends Migration
 
             $table->dateTime('publication_date')->nullable();
 
+
+
             //need to check if the below works:
-            //as per https://stackoverflow.com/questions/18067614/how-can-i-set-the-default-value-of-a-timestamp-column-to-the-current-timestamp-w
-            //$table->dateTime('publication_date')->nullable()->useCurrent();
+            //$table->dateTime('publication_date')->default(DB::raw('CURRENT_TIMESTAMP'));
+
+            //yes it did, but the Publication date field doesn't get got until it's been saved once, even though the formats look fine in the db- how/why?
+
+
 
             $table->text('project_page_description')->nullable();
 

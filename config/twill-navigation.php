@@ -33,6 +33,11 @@ return [
         'module' => true
     ],
 
+    'experiments' => [
+        'title' => 'Experiments',
+        'module' => true
+    ],
+
     //endtemp
 
     'infopages' => [

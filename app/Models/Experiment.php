@@ -5,17 +5,20 @@ namespace App\Models;
 use A17\Twill\Models\Behaviors\HasMedias;
 use A17\Twill\Models\Behaviors\HasFiles;
 use A17\Twill\Models\Behaviors\HasRevisions;
+use A17\Twill\Models\Behaviors\HasPosition;
 use A17\Twill\Models\Model;
 
 class Experiment extends Model 
 {
-    use HasMedias, HasFiles, HasRevisions;
+    use HasMedias, HasFiles, HasRevisions, HasPosition;
 
     protected $fillable = [
         'published',
         'title',
-        'description',
-        // 'position',
+        'position',
+        'caption',
+        'padding_top',
+        'position'
         // 'public',
         // 'featured',
         // 'publish_start_date',
@@ -60,4 +63,8 @@ class Experiment extends Model
             ],
         ],
     ];
+
+    public function experimentimages() {
+        return $this->hasMany(Experimentimage::class);
+    }
 }
