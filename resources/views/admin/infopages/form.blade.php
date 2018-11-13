@@ -1,4 +1,8 @@
-@extends('twill::layouts.form')
+@extends('twill::layouts.form', [
+    'additionalFieldsets' => [
+        ['fieldset' => 'seo_attribs', 'label' => 'SEO'],
+    ]
+])
 
 @section('contentFields')
 
@@ -31,5 +35,20 @@
         'label' => 'Standards Manual Introduction',
         'toolbarOptions' => ['list-unordered', 'link'],
     ])
+
+@stop
+
+@section('fieldsets')
+    
+    <a17-fieldset title="SEO" id="seo_attribs">
+        
+        @formField('input', [
+            'name' => 'seo_meta_description',
+            'label' => 'Meta Description',
+            'type' => 'textarea',
+            'maxlength' => 160
+        ])
+
+    </a17-fieldset>
 
 @stop

@@ -7,6 +7,8 @@ Homepage routes
 //temp
 Route::module('projects');
 Route::module('experiments');
+Route::module('indexpages');
+
 
 
 //this was added to satisfy an error re tags browser field... but why? See notes page 22.

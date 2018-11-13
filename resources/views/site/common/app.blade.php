@@ -1,11 +1,12 @@
 {{-- Main Layout --}}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Order</title>
-  </head>
+
+  @include('site.common.head')
 
   <body>
+
+    @include('site.common.navigation')
 
     @yield('content')
 

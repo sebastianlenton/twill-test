@@ -112,87 +112,101 @@
 	"buffers":
 	[
 		{
-			"file": "resources/views/site/project.blade.php",
+			"file": "resources/views/site/common/head.blade.php",
 			"settings":
 			{
-				"buffer_size": 779,
+				"buffer_size": 352,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "<!DOCTYPE html>"
+			}
+		},
+		{
+			"file": "resources/views/admin/designpages/form.blade.php",
+			"settings":
+			{
+				"buffer_size": 587,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/site/infopage.blade.php",
+			"settings":
+			{
+				"buffer_size": 1450,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/admin/blocks/imgfullwidth.blade.php",
+			"file": "routes/admin.php",
 			"settings":
 			{
-				"buffer_size": 782,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/twill.php",
-			"settings":
-			{
-				"buffer_size": 1882,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/admin/blocks/longformtext.blade.php",
-			"settings":
-			{
-				"buffer_size": 214,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/site/blocks/longformtext.blade.php",
-			"settings":
-			{
-				"buffer_size": 145,
+				"buffer_size": 1487,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/site/blocks/shortformtext.blade.php",
+			"file": "config/twill-navigation.php",
 			"settings":
 			{
-				"buffer_size": 184,
+				"buffer_size": 1815,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/site/blocks/imgfullwidth.blade.php",
+			"file": "app/Models/Indexpage.php",
 			"settings":
 			{
-				"buffer_size": 319,
+				"buffer_size": 1441,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/site/blocks/imgtext.blade.php",
+			"file": "resources/views/site/common/footer.blade.php",
 			"settings":
 			{
-				"buffer_size": 567,
+				"buffer_size": 173,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/admin/projects/form.blade.php",
+			"file": "resources/views/site/common/app.blade.php",
 			"settings":
 			{
-				"buffer_size": 3963,
+				"buffer_size": 218,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/Models/Project.php",
+			"file": "resources/views/errors/404.blade.php",
 			"settings":
 			{
-				"buffer_size": 2506,
+				"buffer_size": 137,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/admin/indexpages/form.blade.php",
+			"settings":
+			{
+				"buffer_size": 237,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "database/migrations/2018_11_13_155245_create_indexpages_tables.php",
+			"settings":
+			{
+				"buffer_size": 2695,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -278,26 +292,75 @@
 		"/Users/sebastianlenton/Sites/order",
 		"/Users/sebastianlenton/Sites/order/app",
 		"/Users/sebastianlenton/Sites/order/app/Http",
-		"/Users/sebastianlenton/Sites/order/app/Http/Controllers"
+		"/Users/sebastianlenton/Sites/order/app/Http/Controllers",
+		"/Users/sebastianlenton/Sites/order/resources",
+		"/Users/sebastianlenton/Sites/order/resources/views",
+		"/Users/sebastianlenton/Sites/order/resources/views/site",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/common"
 	],
 	"file_history":
 	[
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/infopages/form.blade.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/site/designpage.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/404.blade.php",
+		"/Users/sebastianlenton/Sites/order/config/twill.php",
+		"/Users/sebastianlenton/Sites/order/routes/admin.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/experiment_preview.blade.php",
+		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_02_162920_create_designpages_tables.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/project_preview.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/news.blade.php",
+		"/Users/sebastianlenton/Sites/order/app/Models/Designpage.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/projects/form.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/designpages/form.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/experiment_preview.blade",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/projecttags/form.blade.php",
+		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_02_173553_create_experiments_tables.php",
+		"/Users/sebastianlenton/Sites/order/app/Repositories/ProjectRepository.php",
+		"/Users/sebastianlenton/Sites/order/routes/web.php",
+		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/ExperimentController.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/experimentListing.blade.php",
+		"/Users/sebastianlenton/Sites/order/.gitignore",
+		"/Users/sebastianlenton/Sites/order/app/Models/Experimentimage.php",
+		"/Users/sebastianlenton/Sites/order/config/twill-navigation.php",
+		"/Users/sebastianlenton/Sites/order/app/Models/Experiment.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/experiments/form.blade.php",
+		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/ProjectController.php",
+		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_07_171508_create_projects_tables.php",
+		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_12_183450_create_experimentimages_tables.php",
+		"/Users/sebastianlenton/Sites/order/app/Models/Project.php",
+		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_02_172715_create_newsitems_tables.php",
+		"/Users/sebastianlenton/Sites/order/app/Models/Newsitem.php",
+		"/Users/sebastianlenton/Sites/order/app/Repositories/ExperimentRepository.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/experimentimage.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/experimentimages/form.blade.php",
+		"/Users/sebastianlenton/Sites/order/app/Models/AccordionItem.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/project.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/indexListing.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/partials/formatDateYYYY.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/blocks/imgtext.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/partials/projectTagsList.blade.php",
+		"/Users/sebastianlenton/Sites/order/app/Http/Requests/Admin/ExperimentRequest.php",
+		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/IndexpageController.php",
+		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/ProjectListingController.php",
+		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/Admin/ProjectController.php",
+		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/InfopageController.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/infopage.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/imgfullwidth.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/longformtext.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/projectListing.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/vews/site/indexpage.blade.php",
+		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/untitled.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/blocks/longformtext.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/blocks/shortformtext.blade.php",
+		"/Users/sebastianlenton/Sites/order/resources/views/site/blocks/imgfullwidth.blade.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/imgtext.blade.php",
 		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_02_164951_create_staffmembers_tables.php",
 		"/Users/sebastianlenton/Sites/order/database/seeds/DatabaseSeeder.php",
-		"/Users/sebastianlenton/Sites/order/config/twill.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/shortformtext.blade.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/longformtext.blade.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/imgfullwidth.blade.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/projects/form.blade.php",
 		"/Users/sebastianlenton/Sites/order/app/Models/Staffmember.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/staffmembers/form.blade.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/site/infopage.blade.php",
 		"/Users/sebastianlenton/Sites/order/database/seeds/StaffmembersTableSeeder.php",
 		"/Users/sebastianlenton/Sites/order/database/seeds/StaffmemberRevisionsTableSeeder.php",
-		"/Users/sebastianlenton/Sites/order/app/Models/Project.php",
-		"/Users/sebastianlenton/Sites/order/app/Repositories/ProjectRepository.php",
 		"/Users/sebastianlenton/Sites/order/resources/assets/js/blocks/BlockProject_Longformtext.vue",
 		"/Users/sebastianlenton/Sites/order/resources/assets/js/blocks/BlockTest.vue",
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/project_longformText.blade.php",
@@ -305,18 +368,9 @@
 		"/Users/sebastianlenton/Sites/order/package.json",
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/project_imgText.blade.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/project_imgFullWidth.blade.php",
-		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/ProjectListingController.php",
 		"/Users/sebastianlenton/Homestead/Homestead.yaml",
-		"/Users/sebastianlenton/Sites/order/routes/web.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/site/projectListing.blade.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/site/project.blade.php",
-		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_07_171508_create_projects_tables.php",
 		"/Users/sebastianlenton/Sites/order/order.sublime-project",
-		"/Users/sebastianlenton/Sites/order/config/twill-navigation.php",
-		"/Users/sebastianlenton/Sites/order/routes/admin.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/infopages/form.blade.php",
 		"/Users/sebastianlenton/Sites/order/app/Models/Infopage.php",
-		"/Users/sebastianlenton/Sites/order/.gitignore",
 		"/Users/sebastianlenton/Sites/order/database/seeds/SettingTranslationsTableSeeder.php",
 		"/Users/sebastianlenton/Sites/order/the bin/Projects/project model.php",
 		"/Users/sebastianlenton/Sites/order/database/migrations/2018_10_24_164728_create_twill_users_tables.php",
@@ -329,19 +383,14 @@
 		"/Users/sebastianlenton/Sites/order/database/migrations/2018_10_24_164728_create_blocks_table.php",
 		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/DesignpageController.php",
 		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_07_164901_create_projects_tables.php",
-		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/Admin/ProjectController.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/welcome.blade.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/404.blade.php",
 		"/Users/sebastianlenton/Sites/order/database/migrations/2018_10_24_164728_create_features_table.php",
 		"/Users/sebastianlenton/Sites/order/database/migrations/2018_10_29_175349_create_accordion_item_tables.php",
-		"/Users/sebastianlenton/Sites/order/app/Repositories/ExperimentRepository.php",
 		"/Users/sebastianlenton/Sites/order/database/migrations/2018_10_24_171456_create_projects_tables.php",
 		"/Users/sebastianlenton/Sites/order/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
-		"/Users/sebastianlenton/Sites/order/app/Models/AccordionItem.php",
 		"/Users/sebastianlenton/Sites/order/app/Repositories/InfopageRepository.php",
 		"/Users/sebastianlenton/Sites/order/app/Http/Requests/Admin/AccordionItemRequest.php",
 		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/Admin/ExperimentController.php",
-		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/InfopageController.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/settings/form.blade.php",
 		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/Admin/InfopageController.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/site/design.blade.php",
@@ -352,14 +401,10 @@
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/newslinks/form.blade.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/projecttag.blade.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/newsitems/form.blade.php",
-		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_02_172715_create_newsitems_tables.php",
-		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_02_173553_create_experiments_tables.php",
 		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_02_164123_create_infopages_tables.php",
 		"/Users/sebastianlenton/Sites/order/database/migrations/2018_11_02_170129_create_jobs_tables.php",
 		"/Users/sebastianlenton/Sites/order/app/Models/Newslink.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/site/common/navigation.blade.php",
-		"/Users/sebastianlenton/Sites/order/app/Models/Newsitem.php",
-		"/Users/sebastianlenton/Sites/order/app/Models/Experiment.php",
 		"/Users/sebastianlenton/Sites/order/app/Http/Controllers/HomepageController.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/site/homepage.blade.php",
 		"/Users/sebastianlenton/Sites/order/app/Models/Job.php",
@@ -382,34 +427,7 @@
 		"/Users/sebastianlenton/Sites/order/resources/views/admin/settings/index.blade.php",
 		"/Users/sebastianlenton/Sites/order/public/index.php",
 		"/Users/sebastianlenton/Sites/order/resources/views/site/partials/app.blade.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/site/partials/homepage.blade.php",
-		"/Users/sebastianlenton/Sites/laravel/hellolaracastsblog/app/Http/Controllers/PostsController.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/accordion.blade.php",
-		"/Users/sebastianlenton/Sites/twilltest BU231018/.env",
-		"/Users/sebastianlenton/Sites/twilltest/.env",
-		"/Users/sebastianlenton/Sites/order/database/migrations/2018_10_29_152522_create_projecttags_tables.php",
-		"/Users/sebastianlenton/Sites/order/app/Models/Projecttag.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/projecttags/form.blade.php",
-		"/Users/sebastianlenton/Sites/order/app/Models/ProjectTag.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/projecttags.blade.php",
-		"/Users/sebastianlenton/Sites/order/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/Users/sebastianlenton/Sites/order/database/migrations/2018_10_29_150311_create_project_tags_tables.php",
-		"/Users/sebastianlenton/Sites/order/database/migrations/2018_10_29_125700_create_project_tags_tables.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/projectTag.blade.php",
-		"/Users/sebastianlenton/Sites/order/resources/assets/js/blocks/BlockProjecttag.vue",
-		"/Users/sebastianlenton/Sites/order/resources/assets/js/blocks/BlockEditor.vue",
-		"/Users/sebastianlenton/Sites/order/resources/assets/js/blocks/BlockAccordion_Item.vue",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/accordion_item.blade.php",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/projectTags/form.blade.php",
-		"/Users/sebastianlenton/Sites/twilltest BU231018/order.sublime-project",
-		"/Users/sebastianlenton/Sites/order/resources/views/admin/blocks/address.blade.php",
-		"/Users/sebastianlenton/Sites/order/composer.json",
-		"/Users/sebastianlenton/Dropbox/work/2017/130 - Bellingcat amends/NOTES",
-		"/Users/sebastianlenton/Dropbox/work/2017/133 - Belligcat mailing list form/NOTES",
-		"/Users/sebastianlenton/Sites/order/database/migrations/2018_10_26_183713_create_tags_tables.php",
-		"/Users/sebastianlenton/.eggs.txt.swp",
-		"/Users/sebastianlenton/Sites/order/public/hot",
-		"/Users/sebastianlenton/Sites/order/vendor/area17/twill/views/partials/head.blade.php"
+		"/Users/sebastianlenton/Sites/order/resources/views/site/partials/homepage.blade.php"
 	],
 	"find":
 	{
@@ -420,6 +438,7 @@
 		"height": 101.0,
 		"where_history":
 		[
+			"*.php",
 			""
 		]
 	},
@@ -428,6 +447,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@include('site.common.navigation')",
+			"projects",
+			"$project",
+			"$projects",
+			"die",
+			"experiment_image",
+			"Experimentitem",
+			"experimentitem",
+			"Experimentitem",
+			"experimentitem",
+			"accordion_items",
+			"project_id",
+			"width",
+			"WYSIWYG",
+			"wysiwyg",
+			"getProjectTags",
+			"injectProjectSlugs",
+			"ProjectListingController",
+			"projectDate",
+			"sortOrder",
 			"{{",
 			"@foreach",
 			"print_r",
@@ -464,54 +503,53 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "resources/views/site/project.blade.php",
+					"file": "resources/views/site/common/head.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 779,
+						"buffer_size": 352,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								84,
-								84
+								352,
+								352
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"auto_name": "<!DOCTYPE html>",
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "resources/views/admin/blocks/imgfullwidth.blade.php",
+					"file": "resources/views/admin/designpages/form.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 782,
+						"buffer_size": 587,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								782,
-								782
+								559,
+								559
 							]
 						],
 						"settings":
@@ -524,24 +562,55 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "config/twill.php",
+					"file": "resources/views/site/infopage.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1882,
+						"buffer_size": 1450,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								877,
-								884
+								437,
+								437
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "routes/admin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
 							]
 						],
 						"settings":
@@ -558,197 +627,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "resources/views/admin/blocks/longformtext.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 214,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
 					"buffer": 4,
-					"file": "resources/views/site/blocks/longformtext.blade.php",
+					"file": "config/twill-navigation.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 145,
+						"buffer_size": 1815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								145
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "resources/views/site/blocks/shortformtext.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 184,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								91,
-								91
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "resources/views/site/blocks/imgfullwidth.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 319,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60,
-								188
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "resources/views/site/blocks/imgtext.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 567,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "resources/views/admin/projects/form.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3963,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2670,
-								2670
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1242.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/Models/Project.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2506,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								718,
-								718
+								773,
+								773
 							]
 						],
 						"settings":
@@ -758,10 +650,250 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 291.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Models/Indexpage.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								327,
+								327
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "resources/views/site/common/footer.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								56
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "resources/views/site/common/app.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/admin/designpages/form.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 587,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								559,
+								373
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/site/infopage.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "resources/views/errors/404.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								137,
+								137
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "resources/views/admin/indexpages/form.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "database/migrations/2018_11_13_155245_create_indexpages_tables.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1217,
+								1217
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -823,8 +955,252 @@
 		"selected_items":
 		[
 			[
+				"indexpages form",
+				"resources/views/admin/indexpages/form.blade.php"
+			],
+			[
+				"Indexpage",
+				"app/Models/Indexpage.php"
+			],
+			[
+				"create_index",
+				"database/migrations/2018_11_13_155245_create_indexpages_tables.php"
+			],
+			[
+				"navi",
+				"config/twill-navigation.php"
+			],
+			[
+				"admin",
+				"routes/admin.php"
+			],
+			[
+				"infopage",
+				"resources/views/site/infopage.blade.php"
+			],
+			[
+				"designpage form",
+				"resources/views/admin/designpages/form.blade.php"
+			],
+			[
+				"404",
+				"resources/views/errors/404.blade.php"
+			],
+			[
+				"info.blade",
+				"resources/views/site/infopage.blade.php"
+			],
+			[
+				"designpages form",
+				"resources/views/admin/designpages/form.blade.php"
+			],
+			[
+				"footer",
+				"resources/views/site/common/footer.blade.php"
+			],
+			[
+				"experime",
+				"resources/views/admin/blocks/experiment_preview.blade.php"
+			],
+			[
+				"project/form",
+				"resources/views/admin/projects/form.blade.php"
+			],
+			[
+				"routes",
+				"routes/admin.php"
+			],
+			[
+				"twill",
+				"config/twill.php"
+			],
+			[
+				"projecttag",
+				"resources/views/admin/projecttags/form.blade.php"
+			],
+			[
+				"twill.php",
+				"config/twill.php"
+			],
+			[
+				"Designpage",
+				"app/Models/Designpage.php"
+			],
+			[
+				"create_des",
+				"database/migrations/2018_11_02_162920_create_designpages_tables.php"
+			],
+			[
+				"designpage/form",
+				"resources/views/admin/designpages/form.blade.php"
+			],
+			[
+				"experiemnt/form",
+				"resources/views/admin/experiments/form.blade.php"
+			],
+			[
+				".gitig",
+				".gitignore"
+			],
+			[
+				"Experimentimage",
+				"app/Models/Experimentimage.php"
+			],
+			[
+				"navigation",
+				"config/twill-navigation.php"
+			],
+			[
+				"admin.php",
+				"routes/admin.php"
+			],
+			[
+				"ProjectControl",
+				"app/Http/Controllers/ProjectController.php"
+			],
+			[
+				"web",
+				"routes/web.php"
+			],
+			[
+				"Experiment",
+				"app/Models/Experiment.php"
+			],
+			[
+				"create_experime",
+				"database/migrations/2018_11_02_173553_create_experiments_tables.php"
+			],
+			[
+				"repos",
+				"app/Repositories/ProjectRepository.php"
+			],
+			[
+				"create_project",
+				"database/migrations/2018_11_07_171508_create_projects_tables.php"
+			],
+			[
+				"form.blade.php",
+				"resources/views/admin/infopages/form.blade.php"
+			],
+			[
+				"",
+				"resources/views/admin/experiments/form.blade.php"
+			],
+			[
+				"experiment/form",
+				"resources/views/admin/experiments/form.blade.php"
+			],
+			[
+				"experimentimage",
+				"resources/views/admin/experimentimages/form.blade.php"
+			],
+			[
+				"AccordionItem",
+				"app/Models/AccordionItem.php"
+			],
+			[
+				"experiments form",
+				"resources/views/admin/experiments/form.blade.php"
+			],
+			[
+				"experimentreposi",
+				"app/Repositories/ExperimentRepository.php"
+			],
+			[
+				"create_newsi",
+				"database/migrations/2018_11_02_172715_create_newsitems_tables.php"
+			],
+			[
+				"project",
+				"app/Models/Project.php"
+			],
+			[
+				"ExperimentImage",
+				"app/Models/Experimentimage.php"
+			],
+			[
+				"create_experi",
+				"database/migrations/2018_11_12_183450_create_experimentimages_tables.php"
+			],
+			[
+				"form.blade",
+				"resources/views/admin/infopages/form.blade.php"
+			],
+			[
+				"experiment/",
+				"resources/views/admin/experiments/form.blade.php"
+			],
+			[
+				"naviga",
+				"config/twill-navigation.php"
+			],
+			[
+				"Experie",
+				"app/Repositories/ExperimentRepository.php"
+			],
+			[
 				"Project",
 				"app/Models/Project.php"
+			],
+			[
+				"Experiemt",
+				"app/Models/Experiment.php"
+			],
+			[
+				"blocks img",
+				"resources/views/site/blocks/imgtext.blade.php"
+			],
+			[
+				"partials",
+				"resources/views/site/partials/formatDateYYYY.blade.php"
+			],
+			[
+				"inde",
+				"resources/views/site/indexListing.blade.php"
+			],
+			[
+				"project.blade",
+				"resources/views/site/project.blade.php"
+			],
+			[
+				"ProjectController",
+				"app/Http/Controllers/ProjectController.php"
+			],
+			[
+				"indexCon",
+				"app/Http/Controllers/IndexpageController.php"
+			],
+			[
+				"ProjectListing",
+				"app/Http/Controllers/ProjectListingController.php"
+			],
+			[
+				"ProjectCon",
+				"app/Http/Controllers/Admin/ProjectController.php"
+			],
+			[
+				"indexList",
+				"resources/views/site/indexListing.blade.php"
+			],
+			[
+				"projectLi",
+				"resources/views/site/projectListing.blade.php"
+			],
+			[
+				"ProjectLi",
+				"app/Http/Controllers/ProjectListingController.php"
+			],
+			[
+				"InfopageCon",
+				"app/Http/Controllers/InfopageController.php"
+			],
+			[
+				"web.php",
+				"routes/web.php"
+			],
+			[
+				"infopage.bla",
+				"resources/views/site/infopage.blade.php"
 			],
 			[
 				"project/fpr",
@@ -891,10 +1267,6 @@
 				"resources/views/admin/blocks/imgfullwidth.blade.php"
 			],
 			[
-				"project/form",
-				"resources/views/admin/projects/form.blade.php"
-			],
-			[
 				"img",
 				"resources/views/admin/blocks/imgfullwidth.blade.php"
 			],
@@ -915,10 +1287,6 @@
 				"app/Repositories/ProjectRepository.php"
 			],
 			[
-				"form.blade",
-				"resources/views/admin/projects/form.blade.php"
-			],
-			[
 				"project form",
 				"resources/views/admin/projects/form.blade.php"
 			],
@@ -931,16 +1299,8 @@
 				"resources/views/site/projectListing.blade.php"
 			],
 			[
-				"routes",
-				"routes/web.php"
-			],
-			[
 				"ProjectList",
 				"app/Http/Controllers/ProjectListingController.php"
-			],
-			[
-				"create_project",
-				"database/migrations/2018_11_07_171508_create_projects_tables.php"
 			],
 			[
 				"pform",
@@ -949,10 +1309,6 @@
 			[
 				"admin.",
 				"routes/admin.php"
-			],
-			[
-				"navigation",
-				"config/twill-navigation.php"
 			],
 			[
 				"ProjectReposit",
@@ -979,10 +1335,6 @@
 				"database/migrations/2018_11_07_171508_create_projects_tables.php"
 			],
 			[
-				"ProjectCon",
-				"app/Http/Controllers/Admin/ProjectController.php"
-			],
-			[
 				"na",
 				"config/twill-navigation.php"
 			],
@@ -995,32 +1347,12 @@
 				"app/Http/Controllers/DesignpageController.php"
 			],
 			[
-				"404",
-				"resources/views/404.blade.php"
-			],
-			[
-				"web.php",
-				"routes/web.php"
-			],
-			[
-				"web",
-				"routes/web.php"
-			],
-			[
 				"create_twill",
 				"database/migrations/2018_10_24_164728_create_twill_users_tables.php"
 			],
 			[
-				"admin",
-				"routes/admin.php"
-			],
-			[
 				"twill naviga",
 				"config/twill-navigation.php"
-			],
-			[
-				"AccordionItem",
-				"app/Http/Requests/Admin/AccordionItemRequest.php"
 			],
 			[
 				"Accordion",
@@ -1049,10 +1381,6 @@
 			[
 				"createdesignpage",
 				"database/migrations/2018_11_02_162920_create_designpages_tables.php"
-			],
-			[
-				"naviga",
-				"resources/views/site/common/navigation.blade.php"
 			],
 			[
 				"project/",
@@ -1099,10 +1427,6 @@
 				"database/migrations/2018_11_02_164951_create_staffmembers_tables.php"
 			],
 			[
-				"footer",
-				"resources/views/site/common/footer.blade.php"
-			],
-			[
 				"setting",
 				"resources/views/admin/settings/form.blade.php"
 			],
@@ -1141,198 +1465,6 @@
 			[
 				"Job",
 				"app/Models/Job.php"
-			],
-			[
-				"staffmember",
-				"resources/views/admin/staffmembers/form.blade.php"
-			],
-			[
-				"staffM",
-				"app/Models/Staffmember.php"
-			],
-			[
-				"infopages form",
-				"resources/views/admin/infopages/form.blade.php"
-			],
-			[
-				"create_info",
-				"database/migrations/2018_11_02_164123_create_infopages_tables.php"
-			],
-			[
-				"Experiment",
-				"app/Models/Experiment.php"
-			],
-			[
-				"create_experi",
-				"database/migrations/2018_11_02_173553_create_experiments_tables.php"
-			],
-			[
-				"create_newsitem",
-				"database/migrations/2018_11_02_172715_create_newsitems_tables.php"
-			],
-			[
-				"newsite",
-				"app/Models/Newsitem.php"
-			],
-			[
-				"create",
-				"database/migrations/2018_11_02_164951_create_staffmembers_tables.php"
-			],
-			[
-				"staff form",
-				"resources/views/admin/staffmembers/form.blade.php"
-			],
-			[
-				"jobs form",
-				"resources/views/admin/jobs/form.blade.php"
-			],
-			[
-				"create_jobs",
-				"database/migrations/2018_11_02_170129_create_jobs_tables.php"
-			],
-			[
-				"create_newsl",
-				"database/migrations/2018_11_02_165145_create_newslinks_tables.php"
-			],
-			[
-				"create_job",
-				"database/migrations/2018_11_02_170129_create_jobs_tables.php"
-			],
-			[
-				"newsitem",
-				"database/migrations/2018_11_02_172715_create_newsitems_tables.php"
-			],
-			[
-				"model/proj",
-				"app/Models/Project.php"
-			],
-			[
-				"newsItem",
-				"app/Models/Newsitem.php"
-			],
-			[
-				"newsitemC",
-				"app/Http/Controllers/Admin/NewsitemController.php"
-			],
-			[
-				"admin/newsi",
-				"resources/views/admin/newsitems/form.blade.php"
-			],
-			[
-				"projecttagC",
-				"app/Http/Controllers/Admin/ProjecttagController.php"
-			],
-			[
-				"admin.ph",
-				"routes/admin.php"
-			],
-			[
-				"HomepageCon",
-				"app/Http/Controllers/Admin/HomepageController.php"
-			],
-			[
-				"DesignPageController",
-				"app/Http/Controllers/Admin/DesignPageController.php"
-			],
-			[
-				"package.j",
-				"package.json"
-			],
-			[
-				"project",
-				"app/Models/Project.php"
-			],
-			[
-				"project form.",
-				"resources/views/admin/projects/form.blade.php"
-			],
-			[
-				"vproject.",
-				"resources/views/site/project.blade.php"
-			],
-			[
-				"projectsli",
-				"resources/views/site/projectListing.blade.php"
-			],
-			[
-				"homepage",
-				"resources/views/site/homepage.blade.php"
-			],
-			[
-				"Homepage",
-				"app/Models/Homepage.php"
-			],
-			[
-				"ProjectListing",
-				"app/Http/Controllers/ProjectListingController.php"
-			],
-			[
-				"",
-				"app/Models/Homepage.php"
-			],
-			[
-				"foot",
-				"resources/views/site/common/footer.blade.php"
-			],
-			[
-				"app.blade",
-				"resources/views/site/common/app.blade.php"
-			],
-			[
-				"index",
-				"resources/views/admin/settings/index.blade.php"
-			],
-			[
-				"projects/form",
-				"resources/views/admin/projects/form.blade.php"
-			],
-			[
-				"accordion.blade",
-				"resources/views/admin/blocks/accordion.blade.php"
-			],
-			[
-				"create_accordion",
-				"database/migrations/2018_10_29_175349_create_accordion_item_tables.php"
-			],
-			[
-				"ProjectReposityr",
-				"app/Repositories/ProjectRepository.php"
-			],
-			[
-				"twill-navi",
-				"config/twill-navigation.php"
-			],
-			[
-				"twill",
-				"config/twill.php"
-			],
-			[
-				"form.blade.",
-				"resources/views/admin/projects/form.blade.php"
-			],
-			[
-				"accordion",
-				"app/Models/AccordionItem.php"
-			],
-			[
-				"form.blade.php",
-				"resources/views/admin/projecttags/form.blade.php"
-			],
-			[
-				"projecttag",
-				"app/Models/Projecttag.php"
-			],
-			[
-				"views/admin/project",
-				"resources/views/admin/projects/form.blade.php"
-			],
-			[
-				"mProjectTa",
-				"app/Models/ProjectTag.php"
-			],
-			[
-				"CatCo",
-				"app/Http/Controllers/Admin/CatController.php"
 			]
 		],
 		"width": 0.0
@@ -1370,7 +1502,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 210.0,
 	"status_bar_visible": true,
 	"template_settings":

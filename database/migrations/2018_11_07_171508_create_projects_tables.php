@@ -45,6 +45,9 @@ class CreateProjectsTables extends Migration
 
             // use this column with the HasPosition trait
             $table->integer('position')->unsigned()->nullable();
+
+            $table->string('seo_meta_description', 160)->nullable();
+            
         });
 
         //create a table that will store the projecttag browser field relationship

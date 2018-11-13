@@ -2,20 +2,16 @@
 
 namespace App\Models;
 
-use A17\Twill\Models\Behaviors\HasMedias;
-use A17\Twill\Models\Behaviors\HasRevisions;
+
 use A17\Twill\Models\Model;
 
-class Infopage extends Model 
+class Indexpage extends Model 
 {
-    use HasMedias, HasRevisions;
+    
 
     protected $fillable = [
         'published',
         'title',
-        'intro',
-        'capabilities',
-        'intro_sm',
         'seo_meta_description',
         // 'position',
         // 'public',
@@ -42,22 +38,24 @@ class Infopage extends Model
     ];
 
     // uncomment and modify this as needed if you use the HasMedias trait
-    public $mediasParams = [
-        'main_image' => [
-            'default' => [
-                [
-                    'name' => '3:2',
-                    'ratio' => 3 / 2,
-                ]
-            ]
-        ],
-        'sm_image' => [
-            'default' => [
-                [
-                    'name' => '3:2',
-                    'ratio' => 3 / 2,
-                ]
-            ]
-        ],
-    ];
+    // public $mediasParams = [
+    //     'cover' => [
+    //         'default' => [
+    //             [
+    //                 'name' => 'landscape',
+    //                 'ratio' => 16 / 9,
+    //             ],
+    //             [
+    //                 'name' => 'portrait',
+    //                 'ratio' => 3 / 4,
+    //             ],
+    //         ],
+    //         'mobile' => [
+    //             [
+    //                 'name' => 'mobile',
+    //                 'ratio' => 1,
+    //             ],
+    //         ],
+    //     ],
+    // ];
 }

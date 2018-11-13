@@ -31,6 +31,8 @@ class Project extends Model implements Sortable
 
         'project_page_description',
         'project_page_collaborators',
+        
+        'seo_meta_description',
 
     ];
 

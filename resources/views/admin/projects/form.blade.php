@@ -2,6 +2,7 @@
     'additionalFieldsets' => [
         ['fieldset' => 'project-page-view-fields', 'label' => 'Project Page View Fields'],
         ['fieldset' => 'index-page-view-fields', 'label' => 'Index Page View Fields'],
+        ['fieldset' => 'seo_attribs', 'label' => 'SEO'],
     ]
 ])
 
@@ -122,6 +123,17 @@
             'label' => 'Index page image (optional)',
             'note' => 'TODO image size validation.',
             'max' => 1
+        ])
+
+    </a17-fieldset>
+
+    <a17-fieldset title="SEO" id="seo_attribs">
+        
+        @formField('input', [
+            'name' => 'seo_meta_description',
+            'label' => 'Meta Description',
+            'type' => 'textarea',
+            'maxlength' => 160
         ])
 
     </a17-fieldset>

@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Project;
+use App\Models\Indexpage;
 
 class ProjectController extends Controller
 {
@@ -33,7 +34,13 @@ class ProjectController extends Controller
             $project = $this->injectProjectTags($project);
         }
 
-        return view( 'site.indexListing', [ 'projects' => $projects ] );
+        //also, get some bits of info from the Index model
+        $homepage = Indexpage::latest()->get();
+
+        return view( 'site.indexListing', [
+            'projects' => $projects,
+            'item' => $homepage
+        ] );
     }
 
 

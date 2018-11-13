@@ -1,7 +1,5 @@
 @extends('site.common.app')
 
-@include('site.common.navigation')
-
 @section('content')
 
     <h1>Index:</h1>

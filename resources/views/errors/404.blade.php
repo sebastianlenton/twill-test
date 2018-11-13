@@ -1,8 +1,4 @@
-{{-- homepage --}}
-
 @extends('site.common.app')
-
-@include('site.common.navigation')
 
 @section('content')
 

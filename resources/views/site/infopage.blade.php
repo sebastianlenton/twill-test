@@ -1,12 +1,6 @@
-{{-- infopage --}}
-
 @extends('site.common.app')
 
-@include('site.common.navigation')
-
 @section('content')
-
-    <!--info.blade.php-->
 
     <h1>{{ $company_name }}</h1>
 

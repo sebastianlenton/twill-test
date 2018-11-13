@@ -38,6 +38,11 @@ return [
         'module' => true
     ],
 
+    'indexpages' => [
+        'title' => 'Index',
+        'module' => true
+    ],
+
     //endtemp
 
     'infopages' => [
