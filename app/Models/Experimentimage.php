@@ -63,7 +63,4 @@ class Experimentimage extends Model
     //     ],
     // ];
 
-    public function test(){
-        return 'testfunc';
-    }
 }

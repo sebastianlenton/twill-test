@@ -29,12 +29,12 @@ return [
     //temp
 
     'projects' => [
-        'title' => 'Projects',
+        'title' => 'Projects (templink)',
         'module' => true
     ],
 
     'experiments' => [
-        'title' => 'Experiments',
+        'title' => 'Experiments (templink)',
         'module' => true
     ],
 
