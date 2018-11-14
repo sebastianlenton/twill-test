@@ -73,7 +73,7 @@ return [
                 'default' => [
                     [
                         'name' => 'default',
-                        'ratio' => 0
+                        'ratio' => 1 / 1
                     ],
                 ],
             ],

@@ -8,6 +8,7 @@
 @formField('input', [
     'name' => 'news_width',
     'label' => 'Column width (1-12)',
+    'type' => 'number',
     'maxlength' => 2
 ])
 

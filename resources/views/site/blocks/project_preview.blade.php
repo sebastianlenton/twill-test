@@ -1,9 +1,3 @@
-<h2>Project preview</h2>
-
-{{ $block->input('project_preview_width') }}
-
-
-
 @php
 
     //get the project ID from the browser field
@@ -21,4 +15,6 @@
 
 @endforeach
 
-<br>
+Width: {{ $block->input('project_preview_width') }}
+
+<br><br><br>

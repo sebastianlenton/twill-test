@@ -42,25 +42,15 @@ class Experimentimage extends Model
     ];
 
     // uncomment and modify this as needed if you use the HasMedias trait
-    // public $mediasParams = [
-    //     'cover' => [
-    //         'default' => [
-    //             [
-    //                 'name' => 'landscape',
-    //                 'ratio' => 16 / 9,
-    //             ],
-    //             [
-    //                 'name' => 'portrait',
-    //                 'ratio' => 3 / 4,
-    //             ],
-    //         ],
-    //         'mobile' => [
-    //             [
-    //                 'name' => 'mobile',
-    //                 'ratio' => 1,
-    //             ],
-    //         ],
-    //     ],
-    // ];
+    public $mediasParams = [
+        'experiment_image' => [
+            'default' => [
+                [
+                    'name' => 'default',
+                    'ratio' => 1 / 1
+                ]
+            ]
+        ],
+    ];
 
 }

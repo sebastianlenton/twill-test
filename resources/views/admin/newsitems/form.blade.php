@@ -32,12 +32,4 @@
         'editSource' => true,
     ])
 
-    @formField('input', [
-        'name' => 'width',
-        'label' => 'Element Column Width',
-        'type' => 'number',
-        'note' => 'Enter element column width (between 1 & 12)',
-        'min' => 12
-    ])
-
 @stop

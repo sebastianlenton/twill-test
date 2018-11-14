@@ -19,8 +19,6 @@ class CreateNewsitemsTables extends Migration
 
             //TODO what happens if I skip the length param?
             $table->string('content')->nullable();
-
-            $table->integer('width')->unsigned()->nullable();
         });
 
         // remove this if you're not going to use revisions, ie. using the HasRevisions trait
