@@ -20,7 +20,7 @@
 
     @endphp
 
-    <ul>    
+    <ul>
 
         @foreach( $projectTags as $projectTag )
 
