@@ -9,8 +9,6 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Designpage;
 use App\Models\Project;
 
-//use carbon\Carbon;
-
 class DesignpageController extends Controller
 {
     public function __construct() {
@@ -23,7 +21,7 @@ class DesignpageController extends Controller
         $homepage = Designpage::latest()->get();
 
         return view( 'site.designpage', [
-            'item' => $homepage
+            'item' => $homepage,
         ] );
 
     }
