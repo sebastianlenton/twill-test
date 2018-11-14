@@ -10,7 +10,28 @@
 
 @foreach( $projects as $project )
 
-    <h2>{{ $project->title }}</h2>
+    <h2><a href="/project/{{ $project->slug }}">{{ $project->title }}</a></h2>
+
+    @php
+
+        //get the tags
+        $projectTagRelationship = $project->projecttags();
+        $projectTags = $projectTagRelationship->get();
+
+    @endphp
+
+    <ul>    
+
+        @foreach( $projectTags as $projectTag )
+
+            <li>
+                <a href="/tagged/{{ $projectTag->slug }}">{{ $projectTag->title }}</a>
+            </li>
+
+        @endforeach
+
+    </ul>
+
     <img src="{{ $project->image('design_page_images','default') }}">
 
 @endforeach
