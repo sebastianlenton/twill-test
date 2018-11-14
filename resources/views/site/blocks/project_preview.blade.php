@@ -1,5 +1,24 @@
-<h3>Project preview</h3>
+<h2>Project preview</h2>
 
 {{ $block->input('project_preview_width') }}
+
+
+
+@php
+
+    //get the project ID from the browser field
+    $projectsIDs = $block->browserIds('projects');
+    
+    //get the project
+    $projects = app(\App\Models\Project::class)->find($projectsIDs);
+
+@endphp
+
+@foreach( $projects as $project )
+
+    <h2>{{ $project->title }}</h2>
+    <img src="{{ $project->image('design_page_images','default') }}">
+
+@endforeach
 
 <br>
