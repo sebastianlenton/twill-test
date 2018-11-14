@@ -26,9 +26,25 @@
 
                     <br>
 
-                    @include('site.partials.projectTagsList', [
-                        'projectTags' => $project->tagData
-                    ])
+                    @php
+
+                        //get the tags
+                        $projectTagRelationship = $project->projecttags();
+                        $projectTags = $projectTagRelationship->get();
+
+                    @endphp
+
+                    <ul>
+
+                        @foreach( $projectTags as $projectTag )
+
+                            <li>
+                                <a href="/tagged/{{ $projectTag->slug }}">{{ $projectTag->title }}</a>
+                            </li>
+
+                        @endforeach
+
+                    </ul>
 
                 @endif
 

@@ -4,9 +4,25 @@
 
     <h1>{{ $item->title }}</h1>
 
-    @include('site.partials.projectTagsList', [
-        'projectTags' => $item->tagData
-    ])
+    @php
+
+        //get the tags
+        $projectTagRelationship = $item->projecttags();
+        $projectTags = $projectTagRelationship->get();
+
+    @endphp
+
+    <ul>
+
+        @foreach( $projectTags as $projectTag )
+
+            <li>
+                <a href="/tagged/{{ $projectTag->slug }}">{{ $projectTag->title }}</a>
+            </li>
+
+        @endforeach
+
+    </ul>
 
     {{ $item->publication_date }}<br>
     {{ $item->undocumented }}<br>
