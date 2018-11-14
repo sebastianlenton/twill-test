@@ -20,8 +20,10 @@
 
 @formField('input', [
     'name' => 'width',
-    'label' => 'Element width (columns)',
-    'note' => 'Enter a value between 1 and 12.'
+    'label' => 'Column width (1-12)',
+    'note' => 'Enter a value between 1 and 12.',
+    'type' => 'number',
+    'maxlength' => 2
 ])
 
 @formField('checkbox', [

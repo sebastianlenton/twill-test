@@ -8,6 +8,7 @@
 @formField('input', [
     'name' => 'project_preview_width',
     'label' => 'Column width (1-12)',
+    'note' => 'Enter a value between 1 and 12.',
     'type' => 'number',
     'maxlength' => 2
 ])
