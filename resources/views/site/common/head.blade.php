@@ -12,9 +12,9 @@
 
         @if(isset($item[0]))
 
-            <?php
+            @php
                 $item = $item[0];
-            ?>
+            @endphp
 
         @endif
 
@@ -23,6 +23,8 @@
         </title>
 
         <meta name="description" content="{{ $item->seo_meta_description }}">
+
+
 
     @endif
 

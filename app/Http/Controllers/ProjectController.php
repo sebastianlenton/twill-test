@@ -1,11 +1,5 @@
 <?php
 
-/**
- * TODO:
- * - injectProjectSlugs works across a foreach loop, getProjectTags() does not
- */
-
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
