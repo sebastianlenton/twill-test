@@ -212,6 +212,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         
         'SebsCounter' => App\Helpers\SebLenton\Counter::class,
+        'ImageHelper' => App\Helpers\SebLenton\ImageHelper::class,
 
     ],
 

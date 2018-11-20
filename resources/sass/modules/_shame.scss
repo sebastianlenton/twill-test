@@ -7,7 +7,6 @@ Try to clear this down on a regular basis.
 
 ******************************************************************/
 
-p {
-    background: blue;
-    height: 25px;
+p, li {
+    outline: 1px solid pink;
 }

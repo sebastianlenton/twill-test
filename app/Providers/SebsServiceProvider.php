@@ -25,5 +25,6 @@ class SebsServiceProvider extends ServiceProvider
     {
         //
         require_once app_path() . '/Helpers/SebLenton/Counter.php';
+        require_once app_path() . '/Helpers/SebLenton/ImageHelper.php';
     }
 }

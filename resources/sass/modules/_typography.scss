@@ -45,8 +45,7 @@ LIST STYLES
 *********************/
 
 ul, ol {
-  margin-bottom: 1.5rem;
-  margin-left: 1.5rem;
+  
 }
 
 li {
@@ -59,7 +58,8 @@ DEFAULT LINK STYLES
 *********************/
 
 a {
-  color: $grey2;
+  //color: $grey2;
+  color: $white;
   text-decoration: none;
 }
 

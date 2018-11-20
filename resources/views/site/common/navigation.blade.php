@@ -1,28 +1,34 @@
-<div style="padding: 1rem;background:grey;">
+<div class="navMain">
 
-    <ul style="overflow: hidden;">
+    <ul class="gc noBullets">
 
-        <li style="display: block;float:left;margin:0 1rem 0 0;">
-            <a href="/" style="color: white;">
-                {{ $company_name }}
+        <li class="navMain__link g g2-12">
+            <a href="/">
+                Design
             </a>
         </li>
 
         <!--<li style="display: block;float:left;margin:0 1rem 0 0;">
-            <a href="/projects" style="color: white;">
+            <a href="/projects">
                 Projects Listing
             </a>
         </li>-->
 
-        <li style="display: block;float:left;margin:0 1rem 0 0;">
-            <a href="/info" style="color: white;">
+        <li class="navMain__link g g2-12">
+            <a href="/info">
                 Info
             </a>
         </li>
 
-        <li style="display: block;float:left;margin:0 1rem 0 0;">
-            <a href="/index" style="color: white;">
+        <li class="navMain__link g g2-12">
+            <a href="/index">
                 Index
+            </a>
+        </li>
+
+        <li class="navMain__link g g2-12 floatRight alignRight">
+            <a href="/">
+                {{ $company_name }}
             </a>
         </li>
 

@@ -1,22 +1,18 @@
 @extends('site.common.app')
 
 @section('content')
-    
-    @include('test.grid')
 
     @php
     
-        \SebsCounter::inc();
-        \SebsCounter::inc();
+        //\SebsCounter::inc();
+        //\SebsCounter::inc();
 
     @endphp
 
-    <h1>{{ $item[0]->title }}</h1>
+    <div class="gc">
 
-    <p>
-        {{ $item[0]->description }}
-    </p>
+        {!! $item[0]->renderBlocks() !!}
 
-    {!! $item[0]->renderBlocks() !!}
+    </div>
 
 @endsection

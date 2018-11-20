@@ -439,6 +439,7 @@ Stylesheet: Body
 body {
   background: #000;
   color: #fff;
+  margin-top: 4rem;
 }
 
 /******************************************************************
@@ -484,12 +485,6 @@ PARAGRAPH STYLES
 LIST STYLES
 *********************/
 
-ul,
-ol {
-  margin-bottom: 1.5rem;
-  margin-left: 1.5rem;
-}
-
 li {
   margin-bottom: 0;
 }
@@ -499,7 +494,7 @@ DEFAULT LINK STYLES
 *********************/
 
 a {
-  color: #787878;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -684,6 +679,26 @@ FLOATS
   float: right !important;
 }
 
+/*********************
+ALIGN
+*********************/
+
+.alignRight {
+  text-align: right;
+}
+
+/*********************
+FONT STYLES
+*********************/
+
+.italic {
+  font-style: italic;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
 /******************************************************************
 Site Name: Order
 Author: Sebastian Lenton
@@ -702,15 +717,11 @@ All footer styling
 
 ******************************************************************/
 
-.menu-item {
-  text-align: center;
-}
-
-@media (min-width: 48em) {
-  .menu-item {
-    float: left;
-    padding-left: 1rem;
-  }
+.navMain {
+  background: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /******************************************************************
@@ -727,59 +738,14 @@ All footer styling
 Site Name: Order
 Author: Sebastian Lenton
 
-Stylesheet: Sticky Main Footer
-
-Makes the main footer stick to the bottom of the viewport.
-
-NOTES
-- If the project involves sliding menus etc, might need to modify this.
-- The divs will only be as wide as their content if their is no width set on containers.
-
-******************************************************************/
-
-html,
-body {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-/*.slideCont {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-}*/
-
-main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  min-height: 1%;
-}
-
-.footerMain {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-}
-
-/******************************************************************
-Site Name: Order
-Author: Sebastian Lenton
-
 Shame - this is for quick fixes only!
 Try to clear this down on a regular basis.
 
 ******************************************************************/
 
-p {
-  background: blue;
-  height: 25px;
+p,
+li {
+  outline: 1px solid pink;
 }
 
 /*********************
