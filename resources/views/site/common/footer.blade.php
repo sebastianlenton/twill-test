@@ -1,3 +1,5 @@
+<div class="cf"></div>
+
 <div class="gc">
 
     {{-- TODO add this to the settings page --}}

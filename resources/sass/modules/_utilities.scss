@@ -49,17 +49,20 @@ FIT LANDSCAPE
 TYPOGRAPHY
 *********************/
 
-//remove bullets for ul/ol. Not set by default due to WP WYSIWYG
-.noBullets {
-	list-style: none !important;
-}
-
 .bold {
   font-weight: bold !important;
 }
 
 .underline {
   text-decoration: underline !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 
@@ -109,17 +112,4 @@ ALIGN
 
 .alignRight {
   text-align: right;
-}
-
-
-/*********************
-FONT STYLES
-*********************/
-
-.italic {
-  font-style: italic;
-}
-
-.lowercase {
-  text-transform: lowercase;
 }

@@ -10,26 +10,28 @@
 
 @foreach( $experiments as $experiment )
 
-    <h2>{{ $experiment->title }}</h2>
+    <div class="g g{{ $block->input('experiment_preview_width') }}-12">
 
-    {{ $experiment->content }}
+        {{-- TODO experiment links --}}
+        <h2>
+            {{ $experiment->title }}
+        </h2>
 
-    @php
+        {{ $experiment->content }}
+
+        @php
 
         //get the related experimentimages
         $experimentImgRelationship = $experiment->experimentimages();
         $expImgs = $experimentImgRelationship->get();
 
-    @endphp
+        @endphp
 
-    @foreach( $expImgs as $expImg )
+        {{ ImageHelper::render(
+            $expImgs[0]->image('experiment_image','default'),
+            $expImgs[0]->imageAltText('experiment_image')
+        ) }}
 
-        <img src="{{ $expImg->image('experiment_image','default') }}">
-
-    @endforeach
+    </div>
 
 @endforeach
-
-Width: {{ $block->input('experiment_preview_width') }}
-
-<br><br><br>

@@ -485,6 +485,11 @@ PARAGRAPH STYLES
 LIST STYLES
 *********************/
 
+ul,
+ol {
+  list-style: none;
+}
+
 li {
   margin-bottom: 0;
 }
@@ -628,16 +633,20 @@ FIT LANDSCAPE
 TYPOGRAPHY
 *********************/
 
-.noBullets {
-  list-style: none !important;
-}
-
 .bold {
   font-weight: bold !important;
 }
 
 .underline {
   text-decoration: underline !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 /*********************
@@ -685,18 +694,6 @@ ALIGN
 
 .alignRight {
   text-align: right;
-}
-
-/*********************
-FONT STYLES
-*********************/
-
-.italic {
-  font-style: italic;
-}
-
-.lowercase {
-  text-transform: lowercase;
 }
 
 /******************************************************************

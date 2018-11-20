@@ -1,6 +1,6 @@
 <div class="navMain">
 
-    <ul class="gc noBullets">
+    <ul class="gc">
 
         <li class="navMain__link g g2-12">
             <a href="/">

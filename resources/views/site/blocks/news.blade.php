@@ -1,5 +1,3 @@
-
-
 @php
 
     //get the project ID from the browser field
@@ -12,14 +10,26 @@
 
 @foreach( $newsItems as $newsItem )
 
-    <h2>{{ $newsItem->title }}</h2>
+    <div class="g g{{ $block->input('news_width') }}-12 p0">
 
-    {!! $newsItem->content !!}
+        <div class="g g12-12">
 
-    <img src="{{ $newsItem->image('img_standard','default') }}">
+            {{-- TODO add news filter tag --}}
+            <h2>
+                {{ \Carbon\Carbon::parse($newsItem->published_date)->format('d F, Y')}}
+            </h2>
+
+            <img src="{{ $newsItem->image('img_standard','default') }}">
+
+        </div>
+
+        {{-- TODO this is a problem- in a dynamic context, these grids aren't nestable without further calculations. maybe do a completely vw-based grid? --}}
+        <div class="g g12-12">
+
+            {!! $newsItem->content !!}
+
+        </div>
+
+    </div>
 
 @endforeach
-
-Width: {{ $block->input('news_width') }}
-
-<br><br><br>
