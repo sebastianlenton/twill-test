@@ -163,16 +163,23 @@ FONT STACKS
 FONT FACE: DEMO
 *********************/
 
-/*@font-face {
-  font-family: 'Lyon Text Web';
-  src: url('../fonts/lyonText/LyonText-Bold-Web.eot');
-  src: url('../fonts/lyonText/LyonText-Bold-Web.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/lyonText/LyonText-Bold-Web.woff2') format('woff2'),
-       url('../fonts/lyonText/LyonText-Bold-Web.woff') format('woff');
-  font-weight:  700;
-  font-style:   normal;
+@font-face {
+  font-family: 'Pitch Sans';
+  src: url("/frontend/fonts/PitchSansWeb-Medium.eot");
+  src: url("/frontend/fonts/PitchSansWeb-Medium.eot?#iefix") format("embedded-opentype"), url("/frontend/fonts/PitchSansWeb-Medium.woff2") format("woff2"), url("/frontend/fonts/PitchSansWeb-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
   font-stretch: normal;
-}*/
+}
+
+@font-face {
+  font-family: 'Pitch Sans';
+  src: url("/frontend/fonts/PitchSansWeb-MediumItalic.eot");
+  src: url("/frontend/fonts/PitchSansWeb-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/frontend/fonts/PitchSansWeb-MediumItalic.woff2") format("woff2"), url("/frontend/fonts/PitchSansWeb-MediumItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
 
 /******************************************************************
 Site Name: Order
@@ -379,7 +386,7 @@ BODY TYPE DEFAULTS
 *********************/
 
 body {
-  font-family: monospace;
+  font-family: "Pitch Sans", monospace;
 }
 
 /*********************
