@@ -1,0 +1,23 @@
+{
+  "name": "ORDER",
+  "version": "0.0.0",
+  "authors": [
+    "Sebastian Lenton <sebastian.lenton@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "none",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sass-mq": "~3.2.9"
+  }
+}

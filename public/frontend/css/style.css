@@ -1,0 +1,780 @@
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: style.scss
+
+No development styles should be included here.
+
+******************************************************************/
+
+/*!dev by sebastianlenton.com*/
+
+/*********************
+MQ
+*********************/
+
+/*********************
+SASS IMPORTS
+*********************/
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Reset
+
+Same as on git but with one or two slight changes
+
+******************************************************************/
+
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}*/
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: HTML
+
+******************************************************************/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Variables
+
+Only variables which are used across SCSS files should go here.
+Variables which are only in use on a certain pattern should go in with that pattern.
+
+******************************************************************/
+
+/*********************
+\COLOURS
+*********************/
+
+/*********************
+\DIMENSIONS
+*********************/
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Fonts
+
+******************************************************************/
+
+/*********************
+FONT STACKS
+*********************/
+
+/*********************
+FONT FACE: DEMO
+*********************/
+
+/*@font-face {
+  font-family: 'Lyon Text Web';
+  src: url('../fonts/lyonText/LyonText-Bold-Web.eot');
+  src: url('../fonts/lyonText/LyonText-Bold-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lyonText/LyonText-Bold-Web.woff2') format('woff2'),
+       url('../fonts/lyonText/LyonText-Bold-Web.woff') format('woff');
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}*/
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Grid
+
+General grid only. Specific layouts should not be in here.
+
+******************************************************************/
+
+/*********************
+VARIABLES
+*********************/
+
+/*********************
+CONTAINER
+*********************/
+
+.gc {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+@media (min-width: 48em) {
+  .gc {
+    margin: 0 auto;
+  }
+}
+
+/*********************
+GRID
+*********************/
+
+/*
+  Example grid markup: <div class="g g2-12 gp1"></div>, where:
+  g: grid
+  g2-12: grid column of 2 of 12 (or whichever column value)
+  gp1: push by 1 column
+*/
+
+.g {
+  padding: 0 1rem;
+  float: left;
+  min-height: 1px;
+  background: darkRed;
+}
+
+.g1-12 {
+  width: 8.33333333%;
+}
+
+.g2-12 {
+  width: 16.66666667%;
+}
+
+.g3-12 {
+  width: 25%;
+}
+
+.g4-12 {
+  width: 33.33333333%;
+}
+
+.g5-12 {
+  width: 41.66666667%;
+}
+
+.g6-12 {
+  width: 50%;
+}
+
+.g7-12 {
+  width: 58.33333333%;
+}
+
+.g8-12 {
+  width: 66.66666667%;
+}
+
+.g9-12 {
+  width: 75%;
+}
+
+.g10-12 {
+  width: 83.33333333%;
+}
+
+.g11-12 {
+  width: 91.66666667%;
+}
+
+.g12-12 {
+  width: 100%;
+}
+
+/*********************
+GRID BREAKERS
+*********************/
+
+@media (max-width: 47.99em) {
+  .gBreakTablet {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+}
+
+/*********************
+GRID PUSHERS
+*********************/
+
+.gp1 {
+  margin-left: 8.33333333%;
+}
+
+.gp2 {
+  margin-left: 16.66666667%;
+}
+
+.gp3 {
+  margin-left: 25%;
+}
+
+.gp4 {
+  margin-left: 33.33333333%;
+}
+
+.gp5 {
+  margin-left: 41.66666667%;
+}
+
+.gp6 {
+  margin-left: 50%;
+}
+
+.gp7 {
+  margin-left: 58.33333333%;
+}
+
+.gp8 {
+  margin-left: 66.66666667%;
+}
+
+.gp9 {
+  margin-left: 75%;
+}
+
+.gp10 {
+  margin-left: 83.33333333%;
+}
+
+.gp11 {
+  margin-left: 91.66666667%;
+}
+
+/*********************
+CLEARFIX
+*********************/
+
+.cf:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Body
+
+******************************************************************/
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Typography - general
+
+A basic typographic base.
+
+IMPORTANT: this is also used for editor-style.css.
+
+******************************************************************/
+
+::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+/*********************
+BODY TYPE DEFAULTS
+*********************/
+
+body {
+  font-family: monospace;
+}
+
+/*********************
+PARAGRAPH STYLES
+*********************/
+
+/*p, .p, li {
+  hyphens: none;
+
+}*/
+
+/*********************
+LIST STYLES
+*********************/
+
+ul,
+ol {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0;
+}
+
+/*********************
+DEFAULT LINK STYLES
+*********************/
+
+a {
+  color: #787878;
+  text-decoration: none;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  line-height: 1.5;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/******************************************************************
+HR
+******************************************************************/
+
+hr {
+  height: .25rem;
+  border: none;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  color: #fff;
+  background: #fff;
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Showers/hiders, to show/hide content according to breakpoint
+
+******************************************************************/
+
+@media (min-width: 48em) {
+  .hideAboveTablet {
+    display: none !important;
+  }
+}
+
+.showAboveTablet {
+  display: none !important;
+}
+
+@media (min-width: 48em) {
+  .showAboveTablet {
+    display: block !important;
+  }
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Img placeholders
+
+Div to put images in when they load, so the layout doesn't jump around
+Padding ratios need to be set
+
+******************************************************************/
+
+.imgPlaceholder {
+  background: #fff;
+  height: 0;
+  position: relative;
+}
+
+.imgPlaceholder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.imgPlaceholder--2-1 {
+  padding-top: 50%;
+}
+
+.imgPlaceholder--3-2 {
+  padding-top: 66.6666666%;
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Utilities
+This is like a poor man's Tachyons or BassCSS
+TODO: consider using one of the above libraries
+
+******************************************************************/
+
+/*********************
+MARGINS
+*********************/
+
+.m0 {
+  margin: 0 !important;
+}
+
+/*********************
+PADDING
+*********************/
+
+.p0 {
+  padding: 0 !important;
+}
+
+/*********************
+FIT LANDSCAPE
+*********************/
+
+.fitLandscape {
+  width: 100%  !important;
+  height: auto  !important;
+  display: block  !important;
+}
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+.noBullets {
+  list-style: none !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+/*********************
+POSITIONING
+*********************/
+
+.relative {
+  position: relative !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+/*********************
+DISABLE SELECT
+*********************/
+
+.noSelect {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+
+/*********************
+FLOATS
+*********************/
+
+.floatLeft {
+  float: left !important;
+}
+
+.floatRight {
+  float: right !important;
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: HeaderMain
+
+******************************************************************/
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Footers
+
+All footer styling
+
+******************************************************************/
+
+.menu-item {
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .menu-item {
+    float: left;
+    padding-left: 1rem;
+  }
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Footers
+
+All footer styling
+
+******************************************************************/
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Sticky Main Footer
+
+Makes the main footer stick to the bottom of the viewport.
+
+NOTES
+- If the project involves sliding menus etc, might need to modify this.
+- The divs will only be as wide as their content if their is no width set on containers.
+
+******************************************************************/
+
+html,
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*.slideCont {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}*/
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  min-height: 1%;
+}
+
+.footerMain {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Shame - this is for quick fixes only!
+Try to clear this down on a regular basis.
+
+******************************************************************/
+
+/*********************
+PRINT STYLESHEET
+*********************/
+
+@media print {
+  /******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Print Stylesheet
+
+Print styles from Bones.
+
+******************************************************************/
+
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    -webkit-filter: none !important;
+            filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  a:after,
+  a:visited:after {
+    content: " (" attr(href) ")";
+  }
+
+  a abbr[title]:after,
+  a:visited abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+@page {
+    margin: 0.5cm;
+}
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .sidebar,
+  .page-navigation,
+  .wp-prev-next,
+  .respond-form,
+  nav {
+    display: none;
+  }
+}
+

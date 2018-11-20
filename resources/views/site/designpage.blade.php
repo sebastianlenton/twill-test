@@ -1,15 +1,14 @@
 @extends('site.common.app')
 
 @section('content')
+    
+    @include('test.grid')
 
     @php
-
-        //die('count: ' . \SebsCounter::get());
-        
+    
         \SebsCounter::inc();
         \SebsCounter::inc();
 
-        //die('count: ' . \SebsCounter::get());
     @endphp
 
     <h1>{{ $item[0]->title }}</h1>

@@ -1,0 +1,27 @@
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Variables
+
+Only variables which are used across SCSS files should go here.
+Variables which are only in use on a certain pattern should go in with that pattern.
+
+******************************************************************/
+
+/*********************
+\COLOURS
+*********************/
+
+$white:			#fff;
+$black:			#000;
+$grey1:         #141414;
+$grey2:         #787878;
+
+
+/*********************
+\DIMENSIONS
+*********************/
+
+//this influences things like how much padding/margin is set by utility classes, etc
+//$spacingUnit: 1rem;

@@ -1,0 +1,24 @@
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Showers/hiders, to show/hide content according to breakpoint
+
+******************************************************************/
+
+//how could I automatically make these?
+@include mq( $from: tablet ) {
+	.hideAboveTablet {
+		display: none !important;
+	}
+}
+
+//this defaults to display block.
+//How do I set this so it will do the default state
+//(either display inline or block, etc)?
+.showAboveTablet {
+	display: none !important;
+	@include mq( $from: tablet ) {
+		display: block !important;
+	}
+}

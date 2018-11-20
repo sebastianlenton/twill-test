@@ -1,0 +1,103 @@
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Utilities
+This is like a poor man's Tachyons or BassCSS
+TODO: consider using one of the above libraries
+
+******************************************************************/
+
+/*********************
+MARGINS
+*********************/
+
+$marginTopMax: 5;
+$marginBottomMax: 5;
+
+//remove all margins
+.m0 {
+  margin: 0 !important;
+}
+
+
+/*********************
+PADDING
+*********************/
+
+$paddingTopMax: 5;
+$paddingBottomMax: 5;
+
+//remove all padding
+.p0 {
+  padding: 0 !important;
+}
+
+
+/*********************
+FIT LANDSCAPE
+*********************/
+
+.fitLandscape {
+	width:100%  !important;
+	height: auto  !important;
+	display: block  !important;				//contentious, or logical?
+}
+
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+//remove bullets for ul/ol. Not set by default due to WP WYSIWYG
+.noBullets {
+	list-style: none !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+
+/*********************
+POSITIONING
+*********************/
+
+.relative {
+	position: relative !important;
+}
+
+.fixed {
+	position: fixed !important;
+}
+
+
+/*********************
+DISABLE SELECT
+*********************/
+
+//disable select
+//is the below covered by autoprefixer re vendor prefixes?
+.noSelect {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+
+
+/*********************
+FLOATS
+*********************/
+
+.floatLeft {
+  float: left !important;
+}
+
+.floatRight {
+	float: right !important;
+}

@@ -1,0 +1,30 @@
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Img placeholders
+
+Div to put images in when they load, so the layout doesn't jump around
+Padding ratios need to be set
+
+******************************************************************/
+
+.imgPlaceholder {
+	background: $white;
+	height: 0;
+	position: relative;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.imgPlaceholder--2-1 {
+	padding-top: 50%;
+}
+
+.imgPlaceholder--3-2 {
+	padding-top: 66.6666666%;
+}

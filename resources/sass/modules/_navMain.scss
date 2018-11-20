@@ -1,0 +1,27 @@
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Footers
+
+All footer styling
+
+******************************************************************/
+
+.navMain {
+  
+}
+
+  //this is a WP class on the li element
+  //I should write a menu walker to remove the extra classes
+  .menu-item {
+    text-align: center;
+    @include mq( $from: tablet ) {
+      float: left;
+      padding-left: 1rem;
+    }
+
+    a {
+
+    }
+  }

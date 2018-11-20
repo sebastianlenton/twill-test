@@ -4,7 +4,9 @@
         //die(base_path() . 'public');
     ?>
 
-    <link rel="stylesheet" href="{{ mix('css/app.css', 'frontend') }}">
+    <link rel="stylesheet" href="{{ mix('css/style.css', 'frontend') }}">
+
+    <script src="{{ mix('js/app.js', 'frontend') }}"></script>
     
     @if(isset($exception) && $exception->getStatusCode() == 404)
 

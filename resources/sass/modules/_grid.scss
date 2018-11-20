@@ -1,0 +1,91 @@
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Grid
+
+General grid only. Specific layouts should not be in here.
+
+******************************************************************/
+
+/*********************
+VARIABLES
+*********************/
+
+$columns: 12;
+$cell: 100% / $columns;
+$gutter: 1rem;
+
+
+/*********************
+CONTAINER
+*********************/
+
+.gc {
+  width: 100%;
+  padding: 0 $gutter;
+
+	@include mq( $from: tablet ) {
+		margin: 0 auto;
+	}
+}
+
+
+/*********************
+GRID
+*********************/
+
+/*
+  Example grid markup: <div class="g g2-12 gp1"></div>, where:
+  g: grid
+  g2-12: grid column of 2 of 12 (or whichever column value)
+  gp1: push by 1 column
+*/
+
+.g {
+	padding:0 $gutter;
+	float: left;
+	min-height: 1px;
+  background: darkRed;
+}
+
+@for $i from 1 through $columns {
+  .g#{$i}-#{$columns} {
+      width: $cell * $i;
+  }
+}
+
+
+/*********************
+GRID BREAKERS
+*********************/
+
+@include mq( $until: tablet ) {
+  .gBreakTablet {
+    width: 100%;
+    float: none;
+    margin-left: 0;   // override grid push, if push present
+  }
+}
+
+
+/*********************
+GRID PUSHERS
+*********************/
+
+@for $i from 1 through $columns - 1 {
+	.gp#{$i} {
+		margin-left: $cell * $i;
+	}
+}
+
+
+/*********************
+CLEARFIX
+*********************/
+
+.cf:after {
+    content:" ";
+    display:table;
+    clear:both;
+}

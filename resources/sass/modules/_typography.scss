@@ -1,0 +1,96 @@
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Typography - general
+
+A basic typographic base.
+
+IMPORTANT: this is also used for editor-style.css.
+
+******************************************************************/
+
+::-moz-selection {
+  background: $white;
+  color: $black;
+}
+::selection {
+  background: $white;
+  color: $black;
+}
+
+
+/*********************
+BODY TYPE DEFAULTS
+*********************/
+
+body {
+  font-family: $fontStack;
+  //-webkit-font-smoothing: antialiased;
+}
+
+
+/*********************
+PARAGRAPH STYLES
+*********************/
+
+/*p, .p, li {
+  hyphens: none;
+
+}*/
+
+
+/*********************
+LIST STYLES
+*********************/
+
+ul, ol {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0;
+}
+
+
+/*********************
+DEFAULT LINK STYLES
+*********************/
+
+a {
+  color: $grey2;
+  text-decoration: none;
+}
+
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol {
+  hyphens: none;
+  line-height: 1.5;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+
+
+
+/******************************************************************
+HR
+******************************************************************/
+
+//TODO is this needed?
+hr {
+  height:.25rem;
+  border:none;
+  clear: both;
+  overflow: hidden;
+  
+  margin-bottom: 3rem;
+  color: $white;
+  background: $white;
+}

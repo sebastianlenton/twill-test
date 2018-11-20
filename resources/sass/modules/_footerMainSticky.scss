@@ -1,0 +1,37 @@
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
+Stylesheet: Sticky Main Footer
+
+Makes the main footer stick to the bottom of the viewport.
+
+NOTES
+- If the project involves sliding menus etc, might need to modify this.
+- The divs will only be as wide as their content if their is no width set on containers.
+
+******************************************************************/
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+//if you have an encloser like below, this will need to take CSS from html & body
+/*.slideCont {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}*/
+
+main {
+  flex: 1 0 auto;
+  //this forces a reflow in IE11, to fix a big gap at the bottom!
+  min-height: 1%;
+}
+
+//not sure if this is 100% necessary...?
+.footerMain {
+  flex: none;
+}
