@@ -1,9 +1,5 @@
 const mix = require('laravel-mix');
 
-//global.Mix.manifest.path = function() { return path.join('public/frontend', this.name); };
-
-//require('laravel-mix-merge-manifest');
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -18,5 +14,4 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/frontend/js')
     .sass('resources/sass/app.scss', 'public/frontend/css')
         .version()
-        .setPublicPath('public/frontend');
-        //.mergeManifest();
+            .setPublicPath('public/frontend');
