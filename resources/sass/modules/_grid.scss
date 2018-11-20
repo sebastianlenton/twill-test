@@ -12,10 +12,21 @@ General grid only. Specific layouts should not be in here.
 VARIABLES
 *********************/
 
-$gutter: .9375vw;
-$containerMargin: 7.8vw - $gutter;
+//tablet and desktop only atm (still thinking about how to handle things on mob)
 $columns: 12;
 $cell: 100% / $columns;
+
+/* mobile */
+$mobile_gutter: 6.25vw / 2;
+$mobile_containerMargin: $mobile_gutter;
+
+/* tablet */
+$tablet_gutter: 3.125vw / 2;
+$tablet_containerMargin: 7.8vw - $tablet_gutter;
+
+/* desktop */
+$desktop_gutter: 1.875vw / 2;
+$desktop_containerMargin: 7.8vw - $desktop_gutter;
 
 
 
@@ -25,11 +36,19 @@ CONTAINER
 
 .gc {
   width: 100%;
-  padding: 0 $containerMargin;
 
-	@include mq( $from: tablet ) {
-		//margin: 0 auto;
-	}
+  @include mq( $until: tablet ) {
+    padding: 0 $mobile_containerMargin;
+  }
+
+  @include mq( $from: tablet, $until: desktop ) {
+    padding: 0 $tablet_containerMargin;
+  }
+
+  @include mq( $from: desktop ) {
+    padding: 0 $desktop_containerMargin;
+  }
+
 }
 
 
@@ -45,16 +64,34 @@ GRID
 */
 
 .g {
-	padding:0 $gutter;
+  @include mq( $until: tablet ) {
+    padding:0 $mobile_gutter;
+  }
+
+  @include mq( $from: tablet, $until: desktop ) {
+    padding:0 $tablet_gutter;
+  }
+
+  @include mq( $from: desktop ) {
+    padding:0 $desktop_gutter;
+  }
+
 	float: left;
 	min-height: 1px;
+  background: darkRed;
 }
 
-@for $i from 1 through $columns {
-  .g#{$i}-#{$columns} {
-      width: $cell * $i;
+  @for $i from 1 through $columns {
+    .g#{$i}-#{$columns} {
+        width: $cell * $i;
+    }
   }
-}
+
+  @for $i from 1 through $columns {
+    .g#{$i}-#{$columns} {
+        width: $cell * $i;
+    }
+  }
 
 
 /*********************

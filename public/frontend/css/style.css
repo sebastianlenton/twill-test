@@ -195,13 +195,36 @@ General grid only. Specific layouts should not be in here.
 VARIABLES
 *********************/
 
+/* mobile */
+
+/* tablet */
+
+/* desktop */
+
 /*********************
 CONTAINER
 *********************/
 
 .gc {
   width: 100%;
-  padding: 0 6.8625vw;
+}
+
+@media (max-width: 47.99em) {
+  .gc {
+    padding: 0 3.125vw;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 79.99em) {
+  .gc {
+    padding: 0 6.2375vw;
+  }
+}
+
+@media (min-width: 80em) {
+  .gc {
+    padding: 0 6.8625vw;
+  }
 }
 
 /*********************
@@ -216,9 +239,75 @@ GRID
 */
 
 .g {
-  padding: 0 0.9375vw;
   float: left;
   min-height: 1px;
+  background: darkRed;
+}
+
+@media (max-width: 47.99em) {
+  .g {
+    padding: 0 3.125vw;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 79.99em) {
+  .g {
+    padding: 0 1.5625vw;
+  }
+}
+
+@media (min-width: 80em) {
+  .g {
+    padding: 0 0.9375vw;
+  }
+}
+
+.g1-12 {
+  width: 8.33333333%;
+}
+
+.g2-12 {
+  width: 16.66666667%;
+}
+
+.g3-12 {
+  width: 25%;
+}
+
+.g4-12 {
+  width: 33.33333333%;
+}
+
+.g5-12 {
+  width: 41.66666667%;
+}
+
+.g6-12 {
+  width: 50%;
+}
+
+.g7-12 {
+  width: 58.33333333%;
+}
+
+.g8-12 {
+  width: 66.66666667%;
+}
+
+.g9-12 {
+  width: 75%;
+}
+
+.g10-12 {
+  width: 83.33333333%;
+}
+
+.g11-12 {
+  width: 91.66666667%;
+}
+
+.g12-12 {
+  width: 100%;
 }
 
 .g1-12 {
@@ -687,6 +776,11 @@ Shame - this is for quick fixes only!
 Try to clear this down on a regular basis.
 
 ******************************************************************/
+
+p {
+  background: blue;
+  height: 25px;
+}
 
 /*********************
 PRINT STYLESHEET
