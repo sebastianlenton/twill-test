@@ -16,3 +16,7 @@ yarn-error.log
 
 /theDustbin
 /database/seeds
+
+
+*.sublime-project
+*.sublime-workspace
