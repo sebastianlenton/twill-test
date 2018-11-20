@@ -201,13 +201,7 @@ CONTAINER
 
 .gc {
   width: 100%;
-  padding: 0 1rem;
-}
-
-@media (min-width: 48em) {
-  .gc {
-    margin: 0 auto;
-  }
+  padding: 0 6.8625vw;
 }
 
 /*********************
@@ -222,10 +216,9 @@ GRID
 */
 
 .g {
-  padding: 0 1rem;
+  padding: 0 0.9375vw;
   float: left;
   min-height: 1px;
-  background: darkRed;
 }
 
 .g1-12 {
