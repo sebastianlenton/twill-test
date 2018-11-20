@@ -1,4 +1,10 @@
 <head>
+
+    <?php
+        //die(base_path() . 'public');
+    ?>
+
+    <link rel="stylesheet" href="{{ mix('css/app.css', 'frontend') }}">
     
     @if(isset($exception) && $exception->getStatusCode() == 404)
 
@@ -23,8 +29,6 @@
         </title>
 
         <meta name="description" content="{{ $item->seo_meta_description }}">
-
-
 
     @endif
 
