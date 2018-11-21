@@ -33,12 +33,18 @@
 
                 <div class="g g5-12 {{ $gpClass }}">
 
-                    <h2>{{ $project->title }}</h2>
+                    <h2>
+                        <a href="/project/{{ $project->slug }}">
+                            {{ $project->title }}
+                        </a>
+                    </h2>
 
-                    {{ ImageHelper::render(
-                        $project->image('design_page_images','default'),
-                        $project->imageAltText('design_page_images')
-                    ) }}
+                    <a href="/project/{{ $project->slug }}">
+                        {{ ImageHelper::render(
+                            $project->image('design_page_images','default'),
+                            $project->imageAltText('design_page_images')
+                        ) }}
+                    </a>
 
                     @php
                         $counter++;
