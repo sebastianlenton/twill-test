@@ -33,8 +33,11 @@
         <div class="g g8-12 p0">
 
             <div class="g g12-12">
-                
-                <img src="{{ $item[0]->image('main_image', 'default') }}" alt="{{ $item[0]->imageAltText('main_image') }}">
+
+                {{ ImageHelper::render(
+                    $item[0]->image('main_image', 'default'),
+                    $item[0]->imageAltText('main_image')
+                ) }}
 
             </div>
 
@@ -81,8 +84,11 @@
                 <div class="g g6-12 p0">
                     
                     <div class="g g12-12">
-                        
-                        <img src="{{ $staffmember->image('image', 'default') }}" alt="{{ $staffmember->imageAltText('image') }}">
+
+                        {{ ImageHelper::render(
+                            $staffmember->image('image', 'default'),
+                            $staffmember->imageAltText('image')
+                        ) }}
 
                     </div>
                     
@@ -230,8 +236,11 @@
         <div class="g g8-12 p0">
 
             <div class="g g12-12">
-            
-                <img src="{{ $item[0]->image('sm_image', 'default') }}" alt="{{ $item[0]->imageAltText('sm_image') }}">
+
+                {{ ImageHelper::render(
+                    $item[0]->image('sm_image', 'default'),
+                    $item[0]->imageAltText('sm_image')
+                ) }}
 
             </div>
 
