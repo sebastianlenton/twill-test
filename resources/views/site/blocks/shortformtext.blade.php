@@ -1,8 +1,16 @@
-<div style="background:orange;margin-bottom:2rem;">
+@php
+    $gpClass = '';
+    if( isset( $block->content['leftposition'] ) ) {
+        $gpClass = 'gp' . $block->content['leftposition'];
+    }
+@endphp
 
+<div class="g g2-12 {{ $gpClass }}">
     {!! $block->content['content'] !!}
-
-    {{ $block->content['endofrow'] }}
-    {{ $block->content['leftposition'] }}
-    
 </div>
+
+@php
+    if( $block->content['endofrow'] ) {
+        echo '<div class="cf"></div>';
+    }
+@endphp

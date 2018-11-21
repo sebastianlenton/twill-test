@@ -518,8 +518,8 @@ ol {
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
-  line-height: 1.5;
-  font-size: 100%;
+  line-height: 1.45;
+  font-size: 180%;
   font-weight: normal;
 }
 
