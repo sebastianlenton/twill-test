@@ -18,7 +18,7 @@
     @formField('date_picker', [
         'name' => 'publication_date',
         'label' => 'Publication date',
-        'minDate' => '2018-12-01 12:00'
+        'minDate' => '1981-12-19 12:00'
     ])
 
     {{-- <p>

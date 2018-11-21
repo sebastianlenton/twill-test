@@ -7,6 +7,14 @@ Try to clear this down on a regular basis.
 
 ******************************************************************/
 
+
+/**
+ * normal shame stuff (be ashamed if there's CSS here)
+ */
+
+
+
+
 /**
  * dev only styles
  */
@@ -22,4 +30,14 @@ p, li {
 
 .g {
     background: darkRed;
+}
+
+body {
+    //TEMP!
+    margin-top: 8rem;
+}
+
+.navMain {
+    height: 5rem;
+    padding-top: 1.5rem;
 }

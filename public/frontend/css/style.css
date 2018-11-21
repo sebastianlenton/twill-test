@@ -714,7 +714,9 @@ All footer styling
 ******************************************************************/
 
 .navMain {
-  background: #000;
+  background: rgba(20, 20, 20, 0.85);
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
   position: fixed;
   top: 0;
   width: 100%;
@@ -740,6 +742,10 @@ Try to clear this down on a regular basis.
 ******************************************************************/
 
 /**
+ * normal shame stuff (be ashamed if there's CSS here)
+ */
+
+/**
  * dev only styles
  */
 
@@ -758,6 +764,15 @@ li {
 
 .g {
   background: darkRed;
+}
+
+body {
+  margin-top: 8rem;
+}
+
+.navMain {
+  height: 5rem;
+  padding-top: 1.5rem;
 }
 
 /*********************

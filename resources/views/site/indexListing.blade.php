@@ -4,29 +4,21 @@
 
     <div class="gc">
 
-        <h1>Index:</h1>
-
-        <ul>
+        
 
             @foreach($projects as $project)
 
-                <li>
+                    <div class="g g6-12">
 
-                    @if ($project->undocumented === 1)
+                        <h2>
+                            <a href="/project/{{ $project->projectPermalink }}">
+                                {{ $project->title }}
+                            </a>
+                        </h2>
 
-                        <p>{{ $project->title }}: Project is undocumented</p>
-
-                    @else
-
-                        <a href="/project/{{ $project->projectPermalink }}">
-                            {{ $project->title }}
-                        </a>
-
-                        <br>
-
+                        {{-- get and output tags --}}
                         @php
 
-                            //get the tags
                             $projectTagRelationship = $project->projecttags();
                             $projectTags = $projectTagRelationship->get();
 
@@ -44,17 +36,32 @@
 
                         </ul>
 
-                    @endif
+                    </div>
 
-                    @include('site.partials.formatDateYYYY', [
-                        'date' => $project->publication_date
-                    ])
+                    <div class="g g5-12">
 
-                </li>
+                        @if ($project->undocumented === 0)
+
+                            {{ ImageHelper::render(
+                                $project->image('index_page_image','default'),
+                                $project->imageAltText('index_page_image')
+                            ) }}
+
+                        @endif
+
+                    </div>
+
+                    <div class="g g1-12 alignRight">
+
+                        @include('site.partials.formatDateYYYY', [
+                            'date' => $project->publication_date
+                        ])
+
+                    </div>
+
+                    <div class="cf"></div>
 
             @endforeach
-
-        </ul>
 
     </div>
 

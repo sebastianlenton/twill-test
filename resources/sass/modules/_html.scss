@@ -7,9 +7,10 @@ Stylesheet: HTML
 ******************************************************************/
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 10px;
+    background: $black;
+    font-size: 10px;
 }

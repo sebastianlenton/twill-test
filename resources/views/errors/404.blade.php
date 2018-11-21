@@ -2,10 +2,18 @@
 
 @section('content')
 
-    <h1>404</h1>
+    <div class="gc">
 
-    <p>
-        This is a placeholder 404 page.
-    </p>
+        <div class="g g12-12">
+
+            <h1>404</h1>
+
+            <p>
+                Everything is not in order!
+            </p>
+
+        </div>
+
+    </div>
 
 @endsection
