@@ -2,60 +2,60 @@
 
 @section('content')
 
-    <h1>Index:</h1>
+    <div class="gc">
 
-    <p>
-        This is a placeholder Index project listing page. Select a project below to view more details:
-    </p>
+        <h1>Index:</h1>
 
-    <ul>
+        <ul>
 
-        @foreach($projects as $project)
+            @foreach($projects as $project)
 
-            <li>
+                <li>
 
-                @if ($project->undocumented === 1)
+                    @if ($project->undocumented === 1)
 
-                    <p>{{ $project->title }}: Project is undocumented</p>
+                        <p>{{ $project->title }}: Project is undocumented</p>
 
-                @else
+                    @else
 
-                    <a href="/project/{{ $project->projectPermalink }}">
-                        {{ $project->title }}
-                    </a>
+                        <a href="/project/{{ $project->projectPermalink }}">
+                            {{ $project->title }}
+                        </a>
 
-                    <br>
+                        <br>
 
-                    @php
+                        @php
 
-                        //get the tags
-                        $projectTagRelationship = $project->projecttags();
-                        $projectTags = $projectTagRelationship->get();
+                            //get the tags
+                            $projectTagRelationship = $project->projecttags();
+                            $projectTags = $projectTagRelationship->get();
 
-                    @endphp
+                        @endphp
 
-                    <ul>
+                        <ul>
 
-                        @foreach( $projectTags as $projectTag )
+                            @foreach( $projectTags as $projectTag )
 
-                            <li>
-                                <a href="/tagged/{{ $projectTag->slug }}">{{ $projectTag->title }}</a>
-                            </li>
+                                <li>
+                                    <a href="/tagged/{{ $projectTag->slug }}">{{ $projectTag->title }}</a>
+                                </li>
 
-                        @endforeach
+                            @endforeach
 
-                    </ul>
+                        </ul>
 
-                @endif
+                    @endif
 
-                @include('site.partials.formatDateYYYY', [
-                    'date' => $project->publication_date
-                ])
+                    @include('site.partials.formatDateYYYY', [
+                        'date' => $project->publication_date
+                    ])
 
-            </li>
+                </li>
 
-        @endforeach
+            @endforeach
 
-    </ul>
+        </ul>
+
+    </div>
 
 @endsection
