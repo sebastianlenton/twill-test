@@ -12,7 +12,6 @@ class Newslink extends Model
     protected $fillable = [
         'published',
         'title',
-        //'headline',
         'source',
         'URL'
         // 'position',

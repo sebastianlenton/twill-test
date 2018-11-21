@@ -1,11 +1,6 @@
 @extends('twill::layouts.form')
 
 @section('contentFields')
-    @formField('input', [
-        'name' => 'headline',
-        'type' => 'textarea',
-        'label' => 'Headline'
-    ])
 
     @formField('input', [
         'name' => 'source',

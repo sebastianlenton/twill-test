@@ -6,8 +6,8 @@
 
         <div class="g g4-12">
 
-            <h1>
-                {{ $company_name }}
+            <h1 class="italic">
+                Office
             </h1>
 
             <p>
@@ -16,7 +16,9 @@
 
 
             {{-- TODO this is the same text block as in footer --}}
-            <h2>Contact</h2>
+            <h2 class="italic">
+                Contact
+            </h2>
 
             <p>
                 {{ $telephone }}<br>
@@ -25,6 +27,8 @@
             </p>
 
         </div>
+
+
 
         <div class="g g8-12 p0">
 
@@ -36,13 +40,13 @@
 
             <div class="cf"></div>
 
-            <div class="g g4-12">
+            <div class="g g3-12">
 
               {!! $item[0]->intro !!}  
 
             </div>
 
-            <div class="g g6-12 gp2">
+            <div class="g g6-12 gp3">
 
                 <h2 class="italic">
                     Capabilities
@@ -57,9 +61,12 @@
         <div class="gc"></div>
 
 
+
         <div class="g g4-12">
 
-            <h2>Team</h2>
+            <h2 class="italic">
+                Team
+            </h2>
 
         </div>
 
@@ -111,22 +118,49 @@
         
         <div class="g g4-12">
 
-            <h2>News</h2>
+            <h2 class="italic">
+                News
+            </h2>
 
         </div>
 
         <div class="g g8-12 p0">
 
-            <p>Newslinks TBI Newslinks TBI Newslinks TBI Newslinks TBI Newslinks TBI</p>
+            <ul>
 
-            @foreach($newslinks as $newslink)
-            
-                <p>
-                    {{ $newslink->headline }}<br>
-                    <a href="{{ $newslink->url }}" target="_blank">{{ $newslink->source }}</a>
-                </p>
+                @php
+                    $counter = 0;
+                @endphp
 
-            @endforeach
+                @foreach($newslinks as $newslink)
+                
+                    {{-- every second item gets a grid push --}}
+                    @if( $counter % 2 === 1 )
+                        <li class="g g5-12 gp1">
+                    @else
+                        <li class="g g5-12">
+                    @endif
+
+                        <p>
+                            {{ $newslink->title }}<br>
+                            <a href="{{ $newslink->url }}" target="_blank">{{ $newslink->source }}</a>
+                        </p>                    
+                    </li>
+
+                    @php
+                        $counter++;
+                    @endphp
+
+                    @if( $counter % 2 === 0 )
+
+                        <div class="cf"></div>
+    
+                    @endif
+
+
+                @endforeach
+
+            </ul>
 
         </div>
 
@@ -136,22 +170,46 @@
 
         <div class="g g4-12">
 
-            <h2>Jobs</h2>
+            <h2 class="italic">
+                Jobs
+            </h2>
 
         </div>
 
         <div class="g g8-12 p0">
+
+            @php
+                $counter = 0;
+            @endphp
 
             @foreach($jobs as $job)
 
-                <h3>
-                    {{ $job->title }}<br>
-                    {{ $job->subtitle }}
-                </h3>
+                {{-- every second item gets a grid push 1 --}}
+                    @if( $counter % 2 === 1 )
+                        <div class="g g3-12 gp3">
+                    @else
+                        <div class="g g3-12">
+                    @endif
 
-                <p>
-                    {!! $job->description !!}
-                </p>
+                    <h3>
+                        {{ $job->title }}<br>
+                        {{ $job->subtitle }}
+                    </h3>
+
+                    <p>
+                        {!! $job->description !!}
+                    </p>    
+                </div>
+
+                @php
+                    $counter++;
+                @endphp
+
+                @if( $counter % 2 === 0 )
+
+                    <div class="cf"></div>
+
+                @endif
 
             @endforeach
 
@@ -163,7 +221,9 @@
 
         <div class="g g4-12">
 
-            <h2>Standards Manual</h2>
+            <h2>
+                Standards Manual
+            </h2>
 
         </div>
 
@@ -175,7 +235,11 @@
 
             </div>
 
-            {!! $item[0]->intro_sm !!}
+            <div class="g g12-12">
+
+                {!! $item[0]->intro_sm !!}
+
+            </div>
 
         </div>
 

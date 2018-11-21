@@ -7,6 +7,19 @@ Try to clear this down on a regular basis.
 
 ******************************************************************/
 
+/**
+ * dev only styles
+ */
+
+h1, h2, h3, h4, h5 {
+    outline: 1px solid orange;
+}
+
 p, li {
-    outline: 1px solid pink;
+    outline: 1px solid red;
+}
+
+
+.g {
+    background: darkRed;
 }

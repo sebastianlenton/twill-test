@@ -5,7 +5,7 @@
     {{-- TODO add this to the settings page --}}
     {{-- TODO write this properly so strings don't output as blank if not filled in --}}
 
-    <div class="g g3-12">
+    <div class="g g6-12">
 
         <p class="lowercase">
             <a herf="/index">
@@ -50,7 +50,13 @@
 
     </div>
 
-    
+    <div class="g g2-12 alignRight">
+
+        <a href="#">
+            &uarr;
+        </a>
+
+    </div>
 
 </div>
     
