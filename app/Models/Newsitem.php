@@ -16,6 +16,7 @@ class Newsitem extends Model
         'title',
         'published_date',
         'content',
+        'link'
         // 'position',
         // 'public',
         // 'featured',

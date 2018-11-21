@@ -32,4 +32,9 @@
         'editSource' => true,
     ])
 
+    @formField('input', [
+        'name' => 'link',
+        'label' => 'Link'
+    ])
+
 @stop

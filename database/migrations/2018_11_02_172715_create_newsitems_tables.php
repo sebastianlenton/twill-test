@@ -17,8 +17,9 @@ class CreateNewsitemsTables extends Migration
 
             $table->dateTime('published_date')->nullable();
 
-            //TODO what happens if I skip the length param?
             $table->string('content')->nullable();
+
+            $table->string('link')->nullable();
         });
 
         // remove this if you're not going to use revisions, ie. using the HasRevisions trait

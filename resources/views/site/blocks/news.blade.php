@@ -8,7 +8,6 @@
 
 @endphp
 
-{{-- check if we have a news story --}}
 @if( count( $newsItems ) >= 1 )
 
     @foreach( $newsItems as $newsItem )
@@ -36,7 +35,18 @@
                     {{ \Carbon\Carbon::parse($newsItem->published_date)->format('d F, Y')}}
                 </h2>
 
-                <img src="{{ $newsItem->image('img_standard','default') }}">
+                @if( $newsItem->link )
+                    <a href="{{ $newsItem->link }}">
+                @endif
+
+                    {{ ImageHelper::render(
+                        $newsItem->image('img_standard','default'),
+                        $newsItem->imageAltText('experiment_image')
+                    ) }}
+
+                @if( $newsItem->link )
+                    </a>
+                @endif
 
             </div>
 
