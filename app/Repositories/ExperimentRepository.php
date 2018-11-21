@@ -42,7 +42,6 @@ class ExperimentRepository extends ModuleRepository
         
         // or, to save a hasMany relationship used with the repeater field
         //Updated call to updateRepeaterHelper to make it work with custom naming
-        //$this->updateRepeater($object, $fields, 'accordionItems');
         $this->updateRepeater($object, $fields, 'experimentimages', 'Experimentimage');
         
         parent::afterSave($object, $fields);

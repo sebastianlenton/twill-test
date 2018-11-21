@@ -31,16 +31,16 @@ class AppServiceProvider extends ServiceProvider
 
             $office_address = app(SettingRepository::class)->byKey('office_address');
 
+            $tagline = app(SettingRepository::class)->byKey('tagline');
+
         } catch(\Exception $e) {
 
-            $company_name = 'settings table does not exist';
-            $twitter_handle = 'settings table does not exist';
-            $email_address = 'settings table does not exist';
-            $telephone = 'settings table does not exist';
-            $office_address = 'settings table does not exist';
+            //21/11/18 if the settings table exists, but setting_translations doesn't, it seems as though these are all assigned to blank.
+            $company_name = $twitter_handle = $email_address = $telephone = $office_address = $tagline = 'settings table does not exist';
             
         }
 
+        //TODO maybe these vars should be namespaced, or inside a struct or summat..... they might conflict with other vars used elsewhere
         View::share('company_name', $company_name);
 
         View::share('twitter_handle', $twitter_handle);
@@ -50,6 +50,8 @@ class AppServiceProvider extends ServiceProvider
         View::share('telephone', $telephone);
 
         View::share('office_address', $office_address);
+
+        View::share('tagline', $tagline);
     }
 
     /**

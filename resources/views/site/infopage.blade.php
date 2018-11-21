@@ -163,22 +163,24 @@
 
         <div class="g g4-12">
 
-            <h2>Jobs</h2>
+            <h2>Standards Manual</h2>
 
         </div>
 
         <div class="g g8-12 p0">
 
-            <h2>Standards Manual</h2>
+            <div class="g g12-12">
+            
+                <img src="{{ $item[0]->image('sm_image', 'default') }}" alt="{{ $item[0]->imageAltText('sm_image') }}">
 
-            <img src="{{ $item[0]->image('sm_image', 'default') }}" alt="{{ $item[0]->imageAltText('sm_image') }}">
+            </div>
 
             {!! $item[0]->intro_sm !!}
 
         </div>
 
         <div class="cf"></div>
-        
+
         
 
     </div>

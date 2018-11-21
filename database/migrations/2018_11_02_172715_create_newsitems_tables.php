@@ -13,7 +13,7 @@ class CreateNewsitemsTables extends Migration
             createDefaultTableFields($table);
             
             // feel free to modify the name of this column, but title is supported by default (you would need to specify the name of the column Twill should consider as your "title" column in your module controller if you change it)
-            $table->string('title', 200)->nullable();
+            $table->string('title', 300)->nullable();
 
             $table->dateTime('published_date')->nullable();
 

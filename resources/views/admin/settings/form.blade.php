@@ -54,4 +54,10 @@
         'type' => 'textarea'
     ])
 
+    @formField('input', [
+        'translated' => true,
+        'label' => 'Tagline',
+        'name' => 'tagline'
+    ])
+
 @stop

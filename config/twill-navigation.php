@@ -69,7 +69,7 @@ return [
     ],
 
     'settings' => [
-        'title' => 'Contact Details',
+        'title' => 'Sitewide',
         'route' => 'admin.settings',
         'params' => ['section' => 'form'],
     ],
