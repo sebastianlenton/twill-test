@@ -60,7 +60,7 @@ class Project extends Model implements Sortable
             'default' => [
                 [
                     'name' => 'default',
-                    'ratio' => 16 / 9,
+                    'ratio' => 0,
                 ]
             ]
         ],

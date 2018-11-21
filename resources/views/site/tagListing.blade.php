@@ -2,18 +2,60 @@
 
 @section('content')
 
-    <h1>Project tag: {{ $item->title }}</h1>
+    <div class="gc">
 
-    <p>
-        This is a placeholder Project tag page.
-    </p>
+        <div class="g g3-12">
+            
+            <h1>
+                {{ $item->title }}
+            </h1>
 
-    @foreach( $projects as $project )
+        </div>
 
-        <h2>{{ $project->title }}</h2>
+        <div class="g g9-12 p0">
 
-        <img src="{{ $project->image('design_page_images', 'default') }}">
+            @php
+                $counter = 0;
+            @endphp
+            
+            @foreach( $projects as $project )
 
-    @endforeach
+                {{-- every second item gets a grid push --}}
+                @php
+
+                    $gpClass = '';
+
+                    if( $counter % 2 === 1 ) {
+                        $gpClass = 'gp1';
+                    }
+
+                @endphp
+
+                <div class="g g5-12 {{ $gpClass }}">
+
+                    <h2>{{ $project->title }}</h2>
+
+                    {{ ImageHelper::render(
+                        $project->image('design_page_images','default'),
+                        $project->imageAltText('design_page_images')
+                    ) }}
+
+                    @php
+                        $counter++;
+                    @endphp
+
+                </div>
+
+                @if( $counter % 2 === 0 )
+
+                    <div class="cf"></div>
+
+                @endif
+
+            @endforeach
+
+        </div>
+
+    </div>
 
 @endsection

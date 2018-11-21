@@ -147,10 +147,9 @@
                         <li class="g g5-12">
                     @endif
 
-                        <p>
-                            {{ $newslink->title }}<br>
-                            <a href="{{ $newslink->url }}" target="_blank">{{ $newslink->source }}</a>
-                        </p>                    
+                        {{ $newslink->title }}<br>
+                        <a href="{{ $newslink->url }}" target="_blank">{{ $newslink->source }}</a>
+                        
                     </li>
 
                     @php
