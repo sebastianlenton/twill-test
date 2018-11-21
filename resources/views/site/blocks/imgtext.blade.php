@@ -1,18 +1,56 @@
-<div style="background:pink;margin-bottom:2rem;">
+@php
+    
+    $classAlign = '';
 
-    <img src="{{ $block->image('imgfullwidth', 'desktop') }}">
+    if( $block->content['aligntoright'] ) {
+        $classAlign = 'floatRight';
+    }
 
-    <img src="{{ $block->image('imgfullwidth-mobile', 'mobile') }}">
+@endphp
 
-    <p><a href="{{ $block->content['link'] }}">Link</a></p>
+<div class="g g{{ $block->content['width'] }}-12 {{ $classAlign }}">
+
+    @php
+        if( $block->content['link'] ) {
+            echo '<a href="' . $block->content['link'] . '">';
+        }
+    @endphp
+
+        {{ ImageHelper::render(
+            $block->image('imgfullwidth', 'desktop'),
+            $block->imageAltText('imgfullwidth')
+        ) }}
+
+    @php
+        if( $block->content['link'] ) {
+            echo '</a>';
+        }
+    @endphp
+
+    {{-- TODO mobile img override
+        <img src="{{ $block->image('imgfullwidth-mobile', 'mobile') }}">
+    --}}
+
+    @if( isset( $block->content['caption'] ) )
+
+        {!! $block->content['caption'] !!}
+
+    @endif
+    
+</div>
+
+@if( $block->content['endofrow'] || $block->content['aligntoright'] )
+
+    <div class="cf"></div>
+
+@endif
+
+
+
+{{-- TODO implement padding top and bottom
 
     <p>
-        {{ $block->content['width'] }}<br>
-        {{ $block->content['endofrow'] }}<br>
-        {{ $block->content['aligntoright'] }}<br>
         {{ $block->content['paddingbottom'] }}<br>
     </p>
 
-    {!! $block->content['caption'] !!}
-
-</div>
+--}}

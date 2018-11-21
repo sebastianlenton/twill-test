@@ -75,9 +75,8 @@
 
         --}}
 
+        {!! $item->renderBlocks() !!}
 
     </div>
-
-    {!! $item->renderBlocks() !!}
 
 @endsection

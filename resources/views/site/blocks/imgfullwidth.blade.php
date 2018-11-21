@@ -1,11 +1,36 @@
-<div style="background:limegreen;margin-bottom:2rem;">
+<div class="cf"></div>
 
-    <img src="{{ $block->image('imgfullwidth', 'desktop') }}">
+</div>      {{-- break the outer gc --}}
 
-    <img src="{{ $block->image('imgfullwidth-mobile', 'mobile') }}">
+{{ ImageHelper::render(
+    $block->image('imgfullwidth', 'desktop'),
+    $block->imageAltText('imgfullwidth')
+) }}
 
-    {!! $block->content['caption'] !!}
+{{-- <img src="{{ $block->image('imgfullwidth-mobile', 'mobile') }}"> --}}
+
+@if( $block->content['caption'] )
+
+    <div class="gc">
+
+        <div class="g g2-12">
+
+            {!! $block->content['caption'] !!}
+
+        </div>
+
+        <div class="cf"></div>
+
+    </div>
+
+@endif
+
+{{--
+    TODO implement padding top and bottom
     {{ $block->content['paddingtop'] }}
     {{ $block->content['paddingbottom'] }}
+--}}
 
-</div>
+<div class="cf"></div>
+
+<div class="gc">

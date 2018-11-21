@@ -49,9 +49,6 @@
                 @endforeach
             </ul>
 
-
-            <div class="cf"></div>
-
             <a href="/project/{{ $project->slug }}">
                 {{ ImageHelper::render(
                     $project->image('design_page_images','default'),

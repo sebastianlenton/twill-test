@@ -20,24 +20,29 @@ Try to clear this down on a regular basis.
  */
 
 h1, h2, h3, h4, h5 {
-    outline: 1px solid orange;
+    outline: 1px solid #333;
 }
 
 p, li {
-    outline: 1px solid red;
+    outline: 1px solid #333;
 }
 
 
 .g {
-    background: darkRed;
+    background: #222;
 }
 
 body {
-    //TEMP!
     margin-top: 8rem;
 }
 
 .navMain {
     height: 5rem;
     padding-top: 1.5rem;
+}
+
+.cf {
+    height: 3rem;
+    background: #111;
+    clear: both;
 }
