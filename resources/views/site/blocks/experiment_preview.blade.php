@@ -8,44 +8,48 @@
 
 @endphp
 
-@foreach( $experiments as $experiment )
+@if( count( $experiments ) >= 1 )
 
-    @php
-
-        $classAlign = '';
-
-        if(\LeftRight::get() == 'left') {
-            echo '<div class="cf"></div>';
-        } else {
-            $classAlign = 'floatRight';
-        }
-
-        \LeftRight::step();
-
-    @endphp
-
-    <div class="g g{{ $block->input('experiment_preview_width') }}-12 {{ $classAlign }}">
-
-        {{-- TODO experiment links --}}
-        <h2>
-            {{ $experiment->title }}
-        </h2>
-
-        {{ $experiment->content }}
+    @foreach( $experiments as $experiment )
 
         @php
 
-        //get the related experimentimages
-        $experimentImgRelationship = $experiment->experimentimages();
-        $expImgs = $experimentImgRelationship->get();
+            $classAlign = '';
+
+            if(\LeftRight::get() == 'left') {
+                echo '<div class="cf"></div>';
+            } else {
+                $classAlign = 'floatRight';
+            }
+
+            \LeftRight::step();
 
         @endphp
 
-        {{ ImageHelper::render(
-            $expImgs[0]->image('experiment_image','default'),
-            $expImgs[0]->imageAltText('experiment_image')
-        ) }}
+        <div class="g g{{ $block->input('experiment_preview_width') }}-12 {{ $classAlign }}">
 
-    </div>
+            {{-- TODO experiment links --}}
+            <h2>
+                {{ $experiment->title }}
+            </h2>
 
-@endforeach
+            {{ $experiment->content }}
+
+            @php
+
+            //get the related experimentimages
+            $experimentImgRelationship = $experiment->experimentimages();
+            $expImgs = $experimentImgRelationship->get();
+
+            @endphp
+
+            {{ ImageHelper::render(
+                $expImgs[0]->image('experiment_image','default'),
+                $expImgs[0]->imageAltText('experiment_image')
+            ) }}
+
+        </div>
+
+    @endforeach
+
+@endif

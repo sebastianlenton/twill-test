@@ -8,42 +8,47 @@
 
 @endphp
 
-@foreach( $newsItems as $newsItem )
+{{-- check if we have a news story --}}
+@if( count( $newsItems ) >= 1 )
 
-    @php
+    @foreach( $newsItems as $newsItem )
 
-        $classAlign = '';
+        @php
 
-        if(\LeftRight::get() == 'left') {
-            echo '<div class="cf"></div>';
-        } else {
-            $classAlign = 'floatRight';
-        }
+            $classAlign = '';
 
-        \LeftRight::step();
-        
-    @endphp
+            if(\LeftRight::get() == 'left') {
+                echo '<div class="cf"></div>';
+            } else {
+                $classAlign = 'floatRight';
+            }
 
-    <div class="g g{{ $block->input('news_width') }}-12 p0 {{ $classAlign }}">
+            \LeftRight::step();
+            
+        @endphp
 
-        <div class="g g12-12">
+        <div class="g g{{ $block->input('news_width') }}-12 p0 {{ $classAlign }}">
 
-            {{-- TODO add news filter tag --}}
-            <h2>
-                {{ \Carbon\Carbon::parse($newsItem->published_date)->format('d F, Y')}}
-            </h2>
+            <div class="g g12-12">
 
-            <img src="{{ $newsItem->image('img_standard','default') }}">
+                {{-- TODO add news filter tag --}}
+                <h2>
+                    {{ \Carbon\Carbon::parse($newsItem->published_date)->format('d F, Y')}}
+                </h2>
+
+                <img src="{{ $newsItem->image('img_standard','default') }}">
+
+            </div>
+
+            {{-- TODO this is a problem- in a dynamic context, these grids aren't nestable without further calculations. maybe do a completely vw-based grid? --}}
+            <div class="g g12-12">
+
+                {!! $newsItem->content !!}
+
+            </div>
 
         </div>
 
-        {{-- TODO this is a problem- in a dynamic context, these grids aren't nestable without further calculations. maybe do a completely vw-based grid? --}}
-        <div class="g g12-12">
+    @endforeach
 
-            {!! $newsItem->content !!}
-
-        </div>
-
-    </div>
-
-@endforeach
+@endif

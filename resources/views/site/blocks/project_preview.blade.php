@@ -7,56 +7,60 @@
 
 @endphp
 
-@foreach( $projects as $project )
+@if( count( $projects ) >= 1 )
 
-    @php
-
-        $classAlign = '';
-
-        if(\LeftRight::get() == 'left') {
-            echo '<div class="cf"></div>';
-        } else {
-            $classAlign = 'floatRight';
-        }
-
-        \LeftRight::step();
-        
-    @endphp
-
-    <div class="g g{{ $block->input('project_preview_width') }}-12 {{ $classAlign }}">
-
-        <h2>
-            <a href="/project/{{ $project->slug }}">
-                {{ $project->title }}
-            </a>
-        </h2>
-
+    @foreach( $projects as $project )
 
         @php
-            //get the tags
-            $projectTagRelationship = $project->projecttags();
-            $projectTags = $projectTagRelationship->get();
+
+            $classAlign = '';
+
+            if(\LeftRight::get() == 'left') {
+                echo '<div class="cf"></div>';
+            } else {
+                $classAlign = 'floatRight';
+            }
+
+            \LeftRight::step();
+
         @endphp
 
+        <div class="g g{{ $block->input('project_preview_width') }}-12 {{ $classAlign }}">
 
-        <ul>
-            @foreach( $projectTags as $projectTag )
-                <li>
-                    <a href="/tagged/{{ $projectTag->slug }}">{{ $projectTag->title }}</a>
-                </li>
-            @endforeach
-        </ul>
+            <h2>
+                <a href="/project/{{ $project->slug }}">
+                    {{ $project->title }}
+                </a>
+            </h2>
 
 
-        <div class="cf"></div>
+            @php
+                //get the tags
+                $projectTagRelationship = $project->projecttags();
+                $projectTags = $projectTagRelationship->get();
+            @endphp
 
-        <a href="/project/{{ $project->slug }}">
-            {{ ImageHelper::render(
-                $project->image('design_page_images','default'),
-                $project->imageAltText('design_page_images')
-            ) }}
-        </a>
 
-    </div>
+            <ul>
+                @foreach( $projectTags as $projectTag )
+                    <li>
+                        <a href="/tagged/{{ $projectTag->slug }}">{{ $projectTag->title }}</a>
+                    </li>
+                @endforeach
+            </ul>
 
-@endforeach
+
+            <div class="cf"></div>
+
+            <a href="/project/{{ $project->slug }}">
+                {{ ImageHelper::render(
+                    $project->image('design_page_images','default'),
+                    $project->imageAltText('design_page_images')
+                ) }}
+            </a>
+
+        </div>
+
+    @endforeach
+
+@endif
