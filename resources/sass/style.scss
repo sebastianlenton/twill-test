@@ -28,9 +28,9 @@ $mq-breakpoints: (
 SASS IMPORTS
 *********************/
 
+@import "modules/variables";
 @import "modules/reset";
 @import "modules/html";
-@import "modules/variables";
 @import "modules/fonts";
 @import "modules/grid";
 @import "modules/body";

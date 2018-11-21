@@ -22,6 +22,25 @@ SASS IMPORTS
 Site Name: Order
 Author: Sebastian Lenton
 
+Stylesheet: Variables
+
+Only variables which are used across SCSS files should go here.
+Variables which are only in use on a certain pattern should go in with that pattern.
+
+******************************************************************/
+
+/*********************
+\COLOURS
+*********************/
+
+/*********************
+\DIMENSIONS
+*********************/
+
+/******************************************************************
+Site Name: Order
+Author: Sebastian Lenton
+
 Stylesheet: Reset
 
 Same as on git but with one or two slight changes
@@ -125,27 +144,9 @@ Stylesheet: HTML
 }
 
 html {
+  background: #000;
   font-size: 10px;
 }
-
-/******************************************************************
-Site Name: Order
-Author: Sebastian Lenton
-
-Stylesheet: Variables
-
-Only variables which are used across SCSS files should go here.
-Variables which are only in use on a certain pattern should go in with that pattern.
-
-******************************************************************/
-
-/*********************
-\COLOURS
-*********************/
-
-/*********************
-\DIMENSIONS
-*********************/
 
 /******************************************************************
 Site Name: Order
@@ -438,7 +439,6 @@ Stylesheet: Body
 body {
   background: #000;
   color: #fff;
-  margin-top: 4rem;
 }
 
 /******************************************************************

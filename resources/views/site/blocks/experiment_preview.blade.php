@@ -10,7 +10,21 @@
 
 @foreach( $experiments as $experiment )
 
-    <div class="g g{{ $block->input('experiment_preview_width') }}-12">
+    @php
+
+        $classAlign = '';
+
+        if(\LeftRight::get() == 'left') {
+            echo '<div class="cf"></div>';
+        } else {
+            $classAlign = 'floatRight';
+        }
+
+        \LeftRight::step();
+
+    @endphp
+
+    <div class="g g{{ $block->input('experiment_preview_width') }}-12 {{ $classAlign }}">
 
         {{-- TODO experiment links --}}
         <h2>

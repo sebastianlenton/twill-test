@@ -160,6 +160,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * My service provider :)
+         */
         App\Providers\SebsServiceProvider::class,
 
     ],
@@ -213,6 +216,7 @@ return [
         
         'SebsCounter' => App\Helpers\SebLenton\Counter::class,
         'ImageHelper' => App\Helpers\SebLenton\ImageHelper::class,
+        'LeftRight' => App\Helpers\SebLenton\LeftRight::class,
 
     ],
 

@@ -1,11 +1,13 @@
 <?php
 
+/**
+ * ImageHelper
+ * 
+ * Static class to render images
+ */
+
 namespace App\Helpers\SebLenton;
 
-
-/**
- * ImageHelper: static class to render images
- */
 class ImageHelper {
 
     /**

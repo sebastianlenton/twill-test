@@ -10,7 +10,21 @@
 
 @foreach( $newsItems as $newsItem )
 
-    <div class="g g{{ $block->input('news_width') }}-12 p0">
+    @php
+
+        $classAlign = '';
+
+        if(\LeftRight::get() == 'left') {
+            echo '<div class="cf"></div>';
+        } else {
+            $classAlign = 'floatRight';
+        }
+
+        \LeftRight::step();
+        
+    @endphp
+
+    <div class="g g{{ $block->input('news_width') }}-12 p0 {{ $classAlign }}">
 
         <div class="g g12-12">
 
