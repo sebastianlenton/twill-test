@@ -4,74 +4,182 @@
 
     <div class="gc">
 
-        <h1>{{ $company_name }}</h1>
+        <div class="g g4-12">
 
-        <p>{!! nl2br($office_address) !!}</p>
+            <h1>
+                {{ $company_name }}
+            </h1>
 
-        <h2>Contact</h2>
-        <p>
-            {{ $telephone }}<br>
-            {{ $email_address }}<br>
-            {{ $twitter_handle }}
-        </p>
-
-
-        <img src="{{ $item[0]->image('main_image', 'default') }}" alt="{{ $item[0]->imageAltText('main_image') }}">
-
-        {!! $item[0]->intro !!}
-
-        {!! $item[0]->capabilities !!}
+            <p>
+                {!! nl2br($office_address) !!}
+            </p>
 
 
-        <h2>Team</h2>
+            {{-- TODO this is the same text block as in footer --}}
+            <h2>Contact</h2>
 
-        @foreach($staffmembers as $staffmember)
+            <p>
+                {{ $telephone }}<br>
+                {{ $email_address }}<br>
+                {{ $twitter_handle }}
+            </p>
 
-            <img src="{{ $staffmember->image('image', 'default') }}" alt="{{ $staffmember->imageAltText('image') }}">
+        </div>
+
+        <div class="g g8-12 p0">
+
+            <div class="g g12-12">
+                
+                <img src="{{ $item[0]->image('main_image', 'default') }}" alt="{{ $item[0]->imageAltText('main_image') }}">
+
+            </div>
+
+            <div class="cf"></div>
+
+            <div class="g g4-12">
+
+              {!! $item[0]->intro !!}  
+
+            </div>
+
+            <div class="g g6-12 gp2">
+
+                <h2 class="italic">
+                    Capabilities
+                </h2>
+
+                {!! $item[0]->capabilities !!}
+              
+            </div>
+
+        </div>
+
+        <div class="gc"></div>
+
+
+        <div class="g g4-12">
+
+            <h2>Team</h2>
+
+        </div>
+
+        <div class="g g8-12 p0">
+
+            @php
+                $counter = 0;
+            @endphp
+
+            @foreach($staffmembers as $staffmember)
+
+                <div class="g g6-12 p0">
+                    
+                    <div class="g g12-12">
+                        
+                        <img src="{{ $staffmember->image('image', 'default') }}" alt="{{ $staffmember->imageAltText('image') }}">
+
+                    </div>
+                    
+                    <div class="g g6-12">
+                
+                        <h3>
+                            {{ $staffmember->title }}
+                            <br>
+                            {{ $staffmember->company_role }}
+                        </h3>
+
+                        {!! $staffmember->bio !!}
+
+                    </div>
+
+                </div>
+
+                @php
+                    $counter++;
+                @endphp
+
+                @if( $counter % 2 === 0 )
+
+                    <div class="cf"></div>
+    
+                @endif
+
+            @endforeach
+
+        </div>
+
+
+        
+        <div class="g g4-12">
+
+            <h2>News</h2>
+
+        </div>
+
+        <div class="g g8-12 p0">
+
+            <p>Newslinks TBI Newslinks TBI Newslinks TBI Newslinks TBI Newslinks TBI</p>
+
+            @foreach($newslinks as $newslink)
             
-            <p>
-                {{ $staffmember->title }}
-                <br>
-                {{ $staffmember->company_role }}
-            </p>
+                <p>
+                    {{ $newslink->headline }}<br>
+                    <a href="{{ $newslink->url }}" target="_blank">{{ $newslink->source }}</a>
+                </p>
 
-            {!! $staffmember->bio !!}
+            @endforeach
 
-        @endforeach
+        </div>
 
-
-        <h2>News</h2>
-
-        @foreach($newslinks as $newslink)
-            
-            <p>
-                {{ $newslink->headline }}<br>
-                <a href="{{ $newslink->url }}" target="_blank">{{ $newslink->source }}</a>
-            </p>
-
-        @endforeach
+        <div class="cf"></div>
 
 
-        <h2>Jobs</h2>
 
-        @foreach($jobs as $job)
+        <div class="g g4-12">
 
-            <h3>
-                {{ $job->title }}<br>
-                {{ $job->subtitle }}
-            </h3>
+            <h2>Jobs</h2>
 
-            <p>
-                {!! $job->description !!}
-            </p>
+        </div>
 
-        @endforeach
+        <div class="g g8-12 p0">
 
-        <h2>Standards Manual</h2>
+            @foreach($jobs as $job)
 
-        <img src="{{ $item[0]->image('sm_image', 'default') }}" alt="{{ $item[0]->imageAltText('sm_image') }}">
+                <h3>
+                    {{ $job->title }}<br>
+                    {{ $job->subtitle }}
+                </h3>
 
-        {!! $item[0]->intro_sm !!}
+                <p>
+                    {!! $job->description !!}
+                </p>
+
+            @endforeach
+
+        </div>
+
+        <div class="cf"></div>
+
+
+
+        <div class="g g4-12">
+
+            <h2>Jobs</h2>
+
+        </div>
+
+        <div class="g g8-12 p0">
+
+            <h2>Standards Manual</h2>
+
+            <img src="{{ $item[0]->image('sm_image', 'default') }}" alt="{{ $item[0]->imageAltText('sm_image') }}">
+
+            {!! $item[0]->intro_sm !!}
+
+        </div>
+
+        <div class="cf"></div>
+        
+        
 
     </div>
 
