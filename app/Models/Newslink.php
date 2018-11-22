@@ -13,7 +13,7 @@ class Newslink extends Model
         'published',
         'title',
         'source',
-        'URL'
+        'url'
         // 'position',
         // 'public',
         // 'featured',
