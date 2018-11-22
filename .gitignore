@@ -16,6 +16,7 @@ yarn-error.log
 
 /theDustbin
 /database/seeds
+!/database/seeds/DatabaseSeeder.php
 
 
 *.sublime-project
