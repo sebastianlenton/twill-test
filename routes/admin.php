@@ -5,8 +5,8 @@ Homepage routes
  */
 
 //temp
-Route::module('projects');
-Route::module('experiments');
+//Route::module('projects');
+//Route::module('experiments');
 Route::module('indexpages');
 
 

@@ -28,7 +28,7 @@ return [
 
     //temp
 
-    'projects' => [
+    /*'projects' => [
         'title' => 'Projects (templink)',
         'module' => true
     ],
@@ -36,7 +36,7 @@ return [
     'experiments' => [
         'title' => 'Experiments (templink)',
         'module' => true
-    ],
+    ],*/
 
     'indexpages' => [
         'title' => 'Index',
