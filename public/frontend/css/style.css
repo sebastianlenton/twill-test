@@ -749,21 +749,12 @@ Try to clear this down on a regular basis.
  * dev only styles
  */
 
+p,
 h1,
 h2,
 h3,
-h4,
-h5 {
-  outline: 1px solid #333;
-}
-
-p,
-li {
-  outline: 1px solid #333;
-}
-
-.g {
-  background: #222;
+ul {
+  margin-bottom: 2rem;
 }
 
 body {
@@ -777,8 +768,17 @@ body {
 
 .cf {
   height: 3rem;
-  background: #111;
   clear: both;
+}
+
+/** backgrounds to show grid */
+
+.g {
+  background: #222;
+}
+
+.cf {
+  background: #111;
 }
 
 /*********************

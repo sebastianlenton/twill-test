@@ -12,7 +12,7 @@
 
         </div>
 
-        <div class="g g9-12 p0">
+        
 
             @php
                 $counter = 0;
@@ -20,18 +20,27 @@
             
             @foreach( $projects as $project )
 
-                {{-- every second item gets a grid push --}}
+                {{--
+                    every odd item from 3 onwards gets a gp3
+                    every second item gets a gp1.
+                --}}
                 @php
 
                     $gpClass = '';
 
                     if( $counter % 2 === 1 ) {
                         $gpClass = 'gp1';
+                    } else {
+                        if( $counter >= 2 ) {
+                            if( $counter % 2 === 0 ) {
+                                $gpClass = 'gp3';
+                            }
+                        }
                     }
 
                 @endphp
 
-                <div class="g g5-12 {{ $gpClass }}">
+                <div class="g g4-12 {{ $gpClass }}">
 
                     <h2>
                         <a href="/project/{{ $project->slug }}">
@@ -59,8 +68,6 @@
                 @endif
 
             @endforeach
-
-        </div>
 
     </div>
 

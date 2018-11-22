@@ -20,16 +20,20 @@ Try to clear this down on a regular basis.
  */
 
 h1, h2, h3, h4, h5 {
-    outline: 1px solid #333;
+    //outline: 1px solid #333;
 }
 
 p, li {
-    outline: 1px solid #333;
+    //outline: 1px solid #333;
+}
+
+p, h1, h2, h3, ul {
+    margin-bottom: 2rem;
 }
 
 
 .g {
-    background: #222;
+    //background: #222;
 }
 
 body {
@@ -43,6 +47,16 @@ body {
 
 .cf {
     height: 3rem;
-    background: #111;
     clear: both;
+    //background: #111;
+}
+
+/** backgrounds to show grid */
+
+.g {
+    background: #222;
+}
+
+.cf {
+    background: #111;
 }
