@@ -12,7 +12,10 @@ Try to clear this down on a regular basis.
  * normal shame stuff (be ashamed if there's CSS here)
  */
 
-
+//quick fix to make tags look better for the moment
+ul.horizontal li {
+    margin-right: 2rem;
+}
 
 
 /**
@@ -51,12 +54,16 @@ body {
     //background: #111;
 }
 
+
+
+
+
 /** backgrounds to show grid */
 
 .g {
-    background: #222;
+    //background: #222;
 }
 
 .cf {
-    background: #111;
+    //background: #111;
 }

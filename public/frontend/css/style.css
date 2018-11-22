@@ -489,6 +489,11 @@ ol {
   list-style: none;
 }
 
+ul.horizontal li,
+ol.horizontal li {
+  float: left;
+}
+
 li {
   margin-bottom: 0;
 }
@@ -745,6 +750,10 @@ Try to clear this down on a regular basis.
  * normal shame stuff (be ashamed if there's CSS here)
  */
 
+ul.horizontal li {
+  margin-right: 2rem;
+}
+
 /**
  * dev only styles
  */
@@ -772,14 +781,6 @@ body {
 }
 
 /** backgrounds to show grid */
-
-.g {
-  background: #222;
-}
-
-.cf {
-  background: #111;
-}
 
 /*********************
 PRINT STYLESHEET

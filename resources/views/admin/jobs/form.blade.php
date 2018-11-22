@@ -7,7 +7,7 @@
         'maxlength' => 300
     ])
 
-    @formField('WYSIWYG', [
+    @formField('wysiwyg', [
         'name' => 'description',
         'label' => 'Description',
         'toolbarOptions' => ['link']

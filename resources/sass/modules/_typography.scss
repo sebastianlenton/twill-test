@@ -46,6 +46,12 @@ LIST STYLES
 
 ul, ol {
   list-style:none;
+
+  &.horizontal {
+    li {
+      float: left;
+    }
+  }
 }
 
 li {

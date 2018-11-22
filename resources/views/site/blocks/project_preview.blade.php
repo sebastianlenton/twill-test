@@ -41,7 +41,7 @@
             @endphp
 
 
-            <ul>
+            <ul class="horizontal">
                 @foreach( $projectTags as $projectTag )
                     <li>
                         <a href="/tagged/{{ $projectTag->slug }}">{{ $projectTag->title }}</a>
