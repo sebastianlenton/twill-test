@@ -31,6 +31,7 @@
         </title>
 
         <meta name="description" content="{{ $item->seo_meta_description }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
     @endif
 
