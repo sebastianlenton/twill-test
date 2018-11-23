@@ -4,6 +4,7 @@
 
     {{-- TODO add this to the settings page --}}
     {{-- TODO write this properly so strings don't output as blank if not filled in --}}
+    {{-- TODO add link for Google Maps link from footer --}}
 
     <div class="g g6-12 gBreakTablet">
 
@@ -22,7 +23,9 @@
         </p>
 
         <p class="lowercase">
-            {{ $office_address }}
+            <a href="https://goo.gl/maps/wuJJW8huKCL2" target="_blank" rel="noopener">
+                {{ $office_address }}
+            </a>
         </p>
 
     </div>
@@ -44,7 +47,7 @@
             </a>
             <br>
 
-            <a href="http://www.twitter.com/{{ $twitter_handle }}">
+            <a href="http://www.twitter.com/{{ $twitter_handle }}" target="_blank" rel="noopener">
                 {{ '@' . $twitter_handle }}
             </a>
             <br>

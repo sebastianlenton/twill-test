@@ -43,10 +43,12 @@
 
             @endphp
 
-            {{ ImageHelper::render(
-                $expImgs[0]->image('experiment_image','default'),
-                $expImgs[0]->imageAltText('experiment_image')
-            ) }}
+            <a href="/experiments">
+                {{ ImageHelper::render(
+                    $expImgs[0]->image('experiment_image','default'),
+                    $expImgs[0]->imageAltText('experiment_image')
+                ) }}
+            </a>
 
         </div>
 
