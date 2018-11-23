@@ -23,6 +23,10 @@
 
             \LeftRight::step();
 
+            if( $block->input('row_end') == 1 ) {
+                \LeftRight::set( 'left' );
+            }
+
         @endphp
 
         <div class="g g{{ $block->input('project_preview_width') }}-12 {{ $classAlign }} gBreakTablet">
