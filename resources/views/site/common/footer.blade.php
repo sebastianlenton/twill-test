@@ -34,7 +34,9 @@
         </p>
 
         <p class="lowercase">
-            {{ $telephone }}
+            <a href="tel:{{ $telephone }}">
+                {{ $telephone }}
+            </a>
             <br>
         
             <a href="mailto:{{ $email_address }}">
