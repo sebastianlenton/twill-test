@@ -4,7 +4,7 @@
 
     <div class="gc">
 
-        <div class="g g4-12">
+        <div class="g g4-12 gBreakTablet">
 
             <h1 class="italic">
                 Office
@@ -30,7 +30,7 @@
 
 
 
-        <div class="g g8-12 p0">
+        <div class="g g8-12 p0 gBreakTablet">
 
             <div class="g g12-12">
 
@@ -43,13 +43,13 @@
 
             <div class="cf"></div>
 
-            <div class="g g3-12">
+            <div class="g g3-12 gBreakTablet">
 
               {!! $item[0]->intro !!}  
 
             </div>
 
-            <div class="g g6-12 gp3">
+            <div class="g g6-12 gp3 gBreakTablet">
 
                 <h2 class="italic">
                     Capabilities
@@ -65,7 +65,7 @@
 
 
 
-        <div class="g g4-12">
+        <div class="g g4-12 gBreakTablet">
 
             <h2 class="italic">
                 Team
@@ -73,7 +73,7 @@
 
         </div>
 
-        <div class="g g8-12 p0">
+        <div class="g g8-12 p0 gBreakTablet">
 
             @php
                 $counter = 0;
@@ -81,7 +81,7 @@
 
             @foreach($staffmembers as $staffmember)
 
-                <div class="g g6-12 p0">
+                <div class="g g6-12 p0 gBreakTablet">
                     
                     <div class="g g12-12">
 
@@ -120,9 +120,9 @@
 
         </div>
 
-
+        <div class="cf"></div>
         
-        <div class="g g4-12">
+        <div class="g g4-12 gBreakTablet">
 
             <h2 class="italic">
                 News
@@ -130,7 +130,7 @@
 
         </div>
 
-        <div class="g g8-12 p0">
+        <div class="g g8-12 p0 gBreakTablet">
 
             <ul>
 
@@ -142,9 +142,9 @@
                 
                     {{-- every second item gets a grid push --}}
                     @if( $counter % 2 === 1 )
-                        <li class="g g5-12 gp1">
+                        <li class="g g5-12 gp1 gBreakTablet">
                     @else
-                        <li class="g g5-12">
+                        <li class="g g5-12 gBreakTablet">
                     @endif
 
                         {{ $newslink->title }}<br>
@@ -173,7 +173,7 @@
 
 
 
-        <div class="g g4-12">
+        <div class="g g4-12 gBreakTablet">
 
             <h2 class="italic">
                 Jobs
@@ -181,7 +181,7 @@
 
         </div>
 
-        <div class="g g8-12 p0">
+        <div class="g g8-12 p0 gBreakTablet">
 
             @php
                 $counter = 0;
@@ -191,9 +191,9 @@
 
                 {{-- every second item gets a grid push 1 --}}
                     @if( $counter % 2 === 1 )
-                        <div class="g g3-12 gp3">
+                        <div class="g g3-12 gp3 gBreakTablet">
                     @else
-                        <div class="g g3-12">
+                        <div class="g g3-12 gBreakTablet">
                     @endif
 
                     <h3>
@@ -224,7 +224,7 @@
 
 
 
-        <div class="g g4-12">
+        <div class="g g4-12 gBreakTablet">
 
             <h2>
                 Standards Manual
@@ -232,7 +232,7 @@
 
         </div>
 
-        <div class="g g8-12 p0">
+        <div class="g g8-12 p0 gBreakTablet">
 
             <div class="g g12-12">
 

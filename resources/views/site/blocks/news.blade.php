@@ -26,7 +26,7 @@
             
         @endphp
 
-        <div class="g g{{ $block->input('news_width') }}-12 p0 {{ $classAlign }}">
+        <div class="g g{{ $block->input('news_width') }}-12 p0 {{ $classAlign }} gBreakTablet">
 
             <div class="g g12-12">
 

@@ -4,11 +4,9 @@
 
     <div class="gc">
 
-        
-
             @foreach($projects as $project)
 
-                    <div class="g g6-12">
+                    <div class="g g6-12 gBreakTablet">
 
                         <h2>
                             <a href="/project/{{ $project->projectPermalink }}">
@@ -38,7 +36,7 @@
 
                     </div>
 
-                    <div class="g g5-12">
+                    <div class="g g5-12 gBreakTablet">
 
                         @if ($project->undocumented === 0)
 
@@ -51,7 +49,7 @@
 
                     </div>
 
-                    <div class="g g1-12 alignRight">
+                    <div class="g g1-12 alignRight gBreakTablet">
 
                         @include('site.partials.formatDateYYYY', [
                             'date' => $project->publication_date

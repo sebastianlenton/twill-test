@@ -26,7 +26,7 @@
 
         @endphp
 
-        <div class="g g{{ $block->input('experiment_preview_width') }}-12 {{ $classAlign }}">
+        <div class="g g{{ $block->input('experiment_preview_width') }}-12 {{ $classAlign }} gBreakTablet">
 
             {{-- TODO experiment links --}}
             <h2>

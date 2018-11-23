@@ -366,7 +366,7 @@ GRID BREAKERS
   .gBreakTablet {
     width: 100%;
     float: none;
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 }
 
@@ -751,6 +751,11 @@ Try to clear this down on a regular basis.
  */
 
 ul.horizontal li {
+  margin-right: 2rem;
+}
+
+.previewModuleTitle {
+  float: left;
   margin-right: 2rem;
 }
 

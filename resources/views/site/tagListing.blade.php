@@ -4,7 +4,7 @@
 
     <div class="gc">
 
-        <div class="g g3-12">
+        <div class="g g3-12 gBreakTablet">
             
             <h1>
                 {{ $item->title }}
@@ -40,7 +40,7 @@
 
                 @endphp
 
-                <div class="g g4-12 {{ $gpClass }}">
+                <div class="g g4-12 {{ $gpClass }} gBreakTablet">
 
                     <h2>
                         <a href="/project/{{ $project->slug }}">

@@ -25,9 +25,9 @@
 
         @endphp
 
-        <div class="g g{{ $block->input('project_preview_width') }}-12 {{ $classAlign }}">
+        <div class="g g{{ $block->input('project_preview_width') }}-12 {{ $classAlign }} gBreakTablet">
 
-            <h2>
+            <h2 class="previewModuleTitle">
                 <a href="/project/{{ $project->slug }}">
                     {{ $project->title }}
                 </a>

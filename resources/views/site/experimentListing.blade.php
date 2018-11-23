@@ -4,24 +4,35 @@
 
 @section('content')
 
-    <h1>Index:</h1>
+    <div class="gc">
+        
+        <div class="g g12-12">
 
-    <p>
-        This is a placeholder Experiments listing:
-    </p>
+            <h1>
+                Experiments
+            </h1>
 
-    <ul>
+            <p>
+                This page is yet to be implemented. This is a placeholder Experiments listing.
+                <br><br><br><br><br><br><br><br><br><br>
+            </p>
 
-        @foreach($items as $item)
+            <ul>
 
-            <li>
+                @foreach($items as $item)
 
-                {{ $item->title }}
+                    <li>
 
-            </li>
+                        {{ $item->title }}
 
-        @endforeach
+                    </li>
 
-    </ul>
+                @endforeach
+
+            </ul>
+
+        </div>
+
+    </div>
 
 @endsection
